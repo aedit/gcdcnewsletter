@@ -50,6 +50,8 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      width: 90%;
+      margin: 0 auto;
     }
     .container > h2 {
       flex: 1 1 100%;
@@ -57,6 +59,10 @@
     }
     .promotions {
       text-align: right;
+      flex: 1;
+    }
+    .newsletter {
+      flex: 1;
     }
     .promotions > ul {
       direction: rtl;
@@ -72,6 +78,20 @@
     }
     ul li {
       margin-bottom: 0.4em;
+    }
+    .social-icons {
+      margin: 0.4em;
+      padding: 0.4em;
+      display: flex;
+      justify-content: space-evenly;
+      background: whitesmoke;
+    }
+    .social-icons img {
+      width: 40px;
+    }
+    .social-icons a {
+      text-decoration: none;
+      background: none;
     }
     .tooltiptext {
       visibility: hidden;
@@ -109,26 +129,26 @@
             <h3>Find our Newsletters here</h3>
             <ul>
               <li><a href="Newsletters/april2019.html">April 2019</a></li>
-              <li class="tooltip">
-                <a href=""
+              <li>
+                <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>May
                   2019</a
                 >
               </li>
-              <li class="tooltip">
-                <a href=""
+              <li>
+                <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>June
                   2019</a
                 >
               </li>
-              <li class="tooltip">
-                <a href=""
+              <li>
+                <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>July
                   2019</a
                 >
               </li>
-              <li class="tooltip">
-                <a href=""
+              <li>
+                <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>August
                   2019</a
                 >
@@ -139,40 +159,73 @@
           <div class="promotions">
             <h3>Find our Promotions here</h3>
             <ul>
-              <li class="tooltip">
-                <a href=""
+              <li>
+                <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>April
                   2019</a
                 >
               </li>
-              <li class="tooltip">
-                <a href=""
+              <li>
+                <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>May
                   2019</a
                 >
               </li>
-              <li class="tooltip">
-                <a href=""
+              <li>
+                <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>June
                   2019</a
                 >
               </li>
-              <li class="tooltip">
-                <a href=""
+              <li>
+                <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>July
                   2019</a
                 >
               </li>
-              <li class="tooltip">
-                <a href=""
+              <li>
+                <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>August
                   2019</a
                 >
               </li>
             </ul>
           </div>
-          <div class="social-icons"></div>
         </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/gcdcindore/"
+            ><img
+              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+              alt="Facebook"
+          /></a>
+
+          <a href="https://twitter.com/gcdcIndore"
+            ><img
+              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
+              alt="Twitter"
+          /></a>
+
+          <a href="https://www.instagram.com/gcdcindore/"
+            ><img
+              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png"
+              alt="Instagram"
+          /></a>
+
+          <a
+            href="https://www.linkedin.com/in/google-cloud-developers-community-indore-984651172"
+            ><img
+              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
+              alt="Linkedin"
+          /></a>
+
+          <a
+            href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+            ><img
+              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
+              alt="Meetup"
+          /></a>
+        </div>
+        <hr />
       </div>
     </div>
   </body>
