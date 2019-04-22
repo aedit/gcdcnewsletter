@@ -14,6 +14,19 @@
         display: inline-block;
         float: left;
       }
+      .visible {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       div[class='blog-content'] {
         width: 60%;
       }
@@ -29,6 +42,9 @@
       }
       h3[class='news-title'] {
         text-align: center;
+      }
+      div[id='overlay'] {
+        display: none;
       }
 
       @media screen and (max-width: 740px) {
@@ -455,5 +471,11 @@
         </td>
       </tr>
     </table>
+
+    <div id="overlay">
+      <textarea name="" id="inputtext" cols="30" rows="10"></textarea>
+      <button id="save">Save</button>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
