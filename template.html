@@ -9,77 +9,85 @@
       body {
         background: white;
       }
-      div[class='blog-image'],
-      div[class='blog-content'] {
+      table {
+        border-collapse: collapse;
+      }
+      .blog-image,
+      .blog-content {
         display: inline-block;
         float: left;
       }
-      div[class='blog-content'] {
+      .blog-content {
         width: 60%;
       }
-      div[class='blog-image'] {
+      .blog-image {
         width: 40%;
       }
-      div[class='news'] {
+      .news {
         text-align: center;
       }
-      div[class='news'] li {
+      .news li {
         line-height: 1.8em;
         text-align: left;
       }
-      h3[class='news-title'] {
+      .news-title {
         text-align: center;
       }
 
-      @media screen and (max-width: 740px) {
+      @media screen and (max-width: 480px) {
         * {
           font-size: 1.1rem;
         }
         table[class='container-table'] {
+          max-width: 100% !important;
           width: 100% !important;
         }
-        img[id='header-logo'],
-        img[id='footer-logo'] {
+        #header-logo,
+        #footer-logo {
           width: auto !important;
           height: auto !important;
-          max-width: 100%;
+          max-width: 100% !important;
+          width: 100% !important;
         }
-        p[id='viewinbrowser'],
-        p[id='gcdclink'] {
+        #viewinbrowser,
+        #gcdclink {
           float: none !important;
           display: block !important;
           text-align: center !important;
           font-size: 0.8em !important;
         }
-        p[id='viewinbrowser'] a,
-        p[id='gcdclink'] a {
+        #viewinbrowser a,
+        #gcdclink a {
           font-size: 0.85em;
         }
-        table[class='blogs'] {
+        .blogs {
+          max-width: 80% !important;
           width: 80% !important;
           margin: 0 auto !important;
         }
-        div[class='blog-image'],
-        div[class='blog-content'] {
+        .blog-image,
+        .blog-content {
           display: block !important;
           text-align: center !important;
           float: none !important;
+          max-width: 100% !important;
           width: 100% !important;
         }
-        div[class='news'] {
+        .news {
           text-align: justify;
         }
-        table[class='topics'] {
+        .topics {
           text-align: center;
         }
-        p[id='social'],
-        div[id='social-icons'] {
+        #social,
+        #social-icons {
           display: block !important;
           float: none !important;
           text-align: center !important;
+          max-width: 100% !important;
           width: 100% !important;
         }
-        ul[id='icons-list'] li {
+        #icons-list li {
           margin: 0 1em 0 0;
         }
       }
@@ -93,367 +101,379 @@
       cellpadding="0"
       style="padding:0 0.2em;"
     >
-      <tr>
-        <td>
-          <center>
-            <table
-              class="container-table"
-              width="700px"
-              cellspacing="0"
-              cellpadding="0"
-            >
-              <tr>
-                <td>
-                  <!-- Header -->
-                  <table class="header" cellspacing="0" cellpadding="0">
-                    <!-- Pre-header -->
-                    <tr>
-                      <td>
-                        <p style="display:inline-block" id="gcdclink">
-                          You are recieving this mail because you are a member
-                          of
-                          <a
-                            href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
-                            target="_blank"
-                            >GCDC Indore</a
-                          >
-                        </p>
-                        <p
-                          style="display:inline-block; text-align: right; float:right"
-                          id="viewinbrowser"
-                        >
-                          <a href="#">View in Browser</a>
-                        </p>
-                      </td>
-                    </tr>
-                    <!-- Header Image -->
-                    <tr>
-                      <td>
-                        <a href="#">
-                          <img
-                            id="header-logo"
-                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/96e1e7e0-0754-4baa-9ea4-b0e48dd07c20.png"
-                            alt="GCDC Logo"
-                            width="700px"
-                        /></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p style="display:inline-block;width:49%" id="date">
-                          <strong>Month, Year</strong>
-                        </p>
-                        <p
-                          style="display:inline-block;width:49%; text-align: right"
-                        >
-                          <strong><a href="">Archives</a></strong>
-                        </p>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table
-                    class="blogs"
-                    cellspacing="0"
-                    cellpadding="5"
-                    align="center"
-                  >
-                    <tr>
-                      <td>
-                        <h2 style="text-align:center">
-                          Topics
-                        </h2>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="blog-image">
-                          <img src="https://unsplash.it/200" alt="blogimage" />
-                        </div>
-                        <div class="blog-content">
-                          <h3 class="blog-title">Blog Title</h3>
-                          <p class="blog-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Cupiditate incidunt placeat, necessitatibus
-                            praesentium rem magni labore officia, dolores
-                            sapiente itaque, repellendus excepturi quam eius
-                            quod sed facere id ab perspiciatis!
+      <tbody>
+        <tr>
+          <td>
+            <center>
+              <table
+                class="container-table"
+                width="50%"
+                cellspacing="0"
+                cellpadding="0"
+              >
+                <tr>
+                  <td>
+                    <!-- Header -->
+                    <table class="header" cellspacing="0" cellpadding="0">
+                      <!-- Pre-header -->
+                      <tr>
+                        <td>
+                          <p style="display:inline-block" id="gcdclink">
+                            You are recieving this mail because you are a member
+                            of
+                            <a
+                              href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                              target="_blank"
+                              >GCDC Indore</a
+                            >
                           </p>
-                          <a class="blog-link" href="">Know More</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="blog-image">
-                          <img src="https://unsplash.it/200" alt="blogimage" />
-                        </div>
-                        <div class="blog-content">
-                          <h3 class="blog-title">Blog Title</h3>
-                          <p class="blog-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Cupiditate incidunt placeat, necessitatibus
-                            praesentium rem magni labore officia, dolores
-                            sapiente itaque, repellendus excepturi quam eius
-                            quod sed facere id ab perspiciatis!
-                          </p>
-                          <a class="blog-link" href="">Know More</a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="blog-image">
-                          <img src="https://unsplash.it/200" alt="blogimage" />
-                        </div>
-                        <div class="blog-content">
-                          <h3 class="blog-title">Blog Title</h3>
-                          <p class="blog-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Cupiditate incidunt placeat, necessitatibus
-                            praesentium rem magni labore officia, dolores
-                            sapiente itaque, repellendus excepturi quam eius
-                            quod sed facere id ab perspiciatis!
-                          </p>
-                          <a class="blog-link" href="">Know More</a>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table class="topics" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <td>
-                        <div class="news">
-                          <h3 class="news-title">Lorem, ipsum dolor.</h3>
-                          <ol class="news-list">
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                          </ol>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="news">
-                          <h3 class="news-title">Lorem, ipsum dolor.</h3>
-                          <ol class="news-list">
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                          </ol>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="news">
-                          <h3 class="news-title">Lorem, ipsum dolor.</h3>
-                          <ol class="news-list">
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Vitae, voluptate!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                            <li>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Rerum, nesciunt!
-                            </li>
-                          </ol>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table class="footer" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <td>
-                        <center>
                           <p
-                            style="display:inline-block; float: left"
-                            id="social"
+                            style="display:inline-block; text-align: right; float:right"
+                            id="viewinbrowser"
                           >
-                            Connect us on Social Platforms:
+                            <a href="#">View in Browser</a>
                           </p>
-                          <div
-                            style="text-align: right;display: inline-block; float: right; width: 60%"
-                            id="social-icons"
+                        </td>
+                      </tr>
+                      <!-- Header Image -->
+                      <tr>
+                        <td>
+                          <a href="#">
+                            <img
+                              id="header-logo"
+                              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/96e1e7e0-0754-4baa-9ea4-b0e48dd07c20.png"
+                              alt="GCDC Logo"
+                              width="100%"
+                          /></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="display:inline-block;width:49%" id="date">
+                            <strong>Month, Year</strong>
+                          </p>
+                          <p
+                            style="display:inline-block;width:49%; text-align: right"
                           >
-                            <ul id="icons-list" style="list-style:none; ">
-                              <li style="display: inline">
-                                <a href="https://www.facebook.com/gcdcindore/"
-                                  ><img
-                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
-                                    alt="Facebook"
-                                    width="6%"
-                                /></a>
-                              </li>
-                              <li style="display: inline">
-                                <a href="https://twitter.com/gcdcIndore"
-                                  ><img
-                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
-                                    alt="Twitter"
-                                    width="6%"
-                                /></a>
-                              </li>
-                              <li style="display: inline">
-                                <a href="https://www.instagram.com/gcdcindore/"
-                                  ><img
-                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png"
-                                    alt="Instagram"
-                                    width="6%"
-                                /></a>
-                              </li>
-                              <li style="display: inline">
-                                <a
-                                  href="https://www.linkedin.com/in/google-cloud-developers-community-indore-984651172"
-                                  ><img
-                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
-                                    alt="Linkedin"
-                                    width="6%"
-                                /></a>
-                              </li>
-                              <li style="display: inline">
-                                <a
-                                  href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
-                                  ><img
-                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
-                                    alt="Meetup"
-                                    width="6%"
-                                /></a>
-                              </li>
-                            </ul>
+                            <strong><a href="">Archives</a></strong>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table
+                      class="blogs"
+                      cellspacing="0"
+                      cellpadding="5"
+                      align="center"
+                    >
+                      <tr>
+                        <td>
+                          <h2 style="text-align:center">
+                            Topics
+                          </h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="blog-image">
+                            <img
+                              src="https://unsplash.it/200"
+                              alt="blogimage"
+                            />
                           </div>
-                        </center>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img
-                          id="footer-logo"
-                          src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a383fa84-80d7-4aba-8eb5-94eb75b91d6a.png"
-                          alt="GCDC Logo"
-                          width="700px"
-                        />
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </center>
-        </td>
-      </tr>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Blog Title</h3>
+                            <p class="blog-description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Cupiditate incidunt placeat, necessitatibus
+                              praesentium rem magni labore officia, dolores
+                              sapiente itaque, repellendus excepturi quam eius
+                              quod sed facere id ab perspiciatis!
+                            </p>
+                            <a class="blog-link" href="">Know More</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="blog-image">
+                            <img
+                              src="https://unsplash.it/200"
+                              alt="blogimage"
+                            />
+                          </div>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Blog Title</h3>
+                            <p class="blog-description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Cupiditate incidunt placeat, necessitatibus
+                              praesentium rem magni labore officia, dolores
+                              sapiente itaque, repellendus excepturi quam eius
+                              quod sed facere id ab perspiciatis!
+                            </p>
+                            <a class="blog-link" href="">Know More</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="blog-image">
+                            <img
+                              src="https://unsplash.it/200"
+                              alt="blogimage"
+                            />
+                          </div>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Blog Title</h3>
+                            <p class="blog-description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Cupiditate incidunt placeat, necessitatibus
+                              praesentium rem magni labore officia, dolores
+                              sapiente itaque, repellendus excepturi quam eius
+                              quod sed facere id ab perspiciatis!
+                            </p>
+                            <a class="blog-link" href="">Know More</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table class="topics" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <div class="news">
+                            <h3 class="news-title">Lorem, ipsum dolor.</h3>
+                            <ol class="news-list">
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                            </ol>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="news">
+                            <h3 class="news-title">Lorem, ipsum dolor.</h3>
+                            <ol class="news-list">
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                            </ol>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="news">
+                            <h3 class="news-title">Lorem, ipsum dolor.</h3>
+                            <ol class="news-list">
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Vitae, voluptate!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                              <li>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rerum, nesciunt!
+                              </li>
+                            </ol>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table class="footer" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <center>
+                            <p
+                              style="display:inline-block; float: left"
+                              id="social"
+                            >
+                              Connect us on Social Platforms:
+                            </p>
+                            <div
+                              style="text-align: right;display: inline-block; float: right; width: 60%"
+                              id="social-icons"
+                            >
+                              <ul id="icons-list" style="list-style:none; ">
+                                <li style="display: inline">
+                                  <a href="https://www.facebook.com/gcdcindore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+                                      alt="Facebook"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline">
+                                  <a href="https://twitter.com/gcdcIndore"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
+                                      alt="Twitter"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline">
+                                  <a
+                                    href="https://www.instagram.com/gcdcindore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png"
+                                      alt="Instagram"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline">
+                                  <a
+                                    href="https://www.linkedin.com/in/google-cloud-developers-community-indore-984651172"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
+                                      alt="Linkedin"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline">
+                                  <a
+                                    href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
+                                      alt="Meetup"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            id="footer-logo"
+                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a383fa84-80d7-4aba-8eb5-94eb75b91d6a.png"
+                            alt="GCDC Logo"
+                            width="100%"
+                          />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </center>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>

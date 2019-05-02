@@ -24,7 +24,7 @@ const elements = [
 
 elements.forEach(e => {
   e.addEventListener('click', evt => {
-    overlay.classList.add('visibile')
+    overlay.classList.add('visible')
     console.log('f')
   })
 })
