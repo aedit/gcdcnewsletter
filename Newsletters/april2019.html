@@ -1,51 +1,64 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <link
-      rel="shortcut icon"
-      href="../images/favicon.ico"
-      type="image/x-icon"
-    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GCDC Responsive Template</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Google+Sans:400,500%7C"
     />
-    <title>GCDC Indore Newsletter - April, 2019</title>
-
-    <style type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <style>
       * {
         line-height: 1.4;
         padding: 0.2em 0;
       }
+      body {
+        background: white;
+        font-family: 'Google Sans', 'Open Sans', 'sans-serif';
+      }
       table {
+        border-collapse: collapse;
         padding: 0;
       }
-      body {
-        font-family: 'Google Sans', 'sans-serif';
-        background: lightgray;
-      }
-      .wrapper {
-        width: 800px;
-        margin: 0 auto;
-      }
-      .outer-table {
-        width: 700px;
-        margin: 0 auto;
+      .container-table {
         background: white;
+        padding: 0 2px;
       }
-      .inner-table {
-        background: white;
-        width: 605px;
+      .blog-container {
+        margin: 20px;
       }
-      p {
+      .blog-title {
+        text-align: left;
+        margin: 5px;
+      }
+      .blog-image,
+      .blog-content {
+        display: inline-block;
+        float: left;
+        text-align: center;
+      }
+      .blog-content {
+        width: 60%;
+      }
+      .blog-image {
+        width: 40%;
+      }
+      .blog-description {
         text-align: justify;
       }
-      img {
-        border-radius: 8px;
-        margin-right: 8px;
+      .blog-link {
+        text-align: right;
+        background: rgb(0, 133, 255);
+        color: #ffffff;
+        padding: 5px 10px;
+        margin: 0 25px;
+        border-radius: 5px;
       }
       a {
         text-decoration: none;
@@ -54,623 +67,460 @@
         text-align: right;
         width: 100%;
       }
-      .social-icons img {
-        width: 15px;
+      .topics {
+        margin: 0 auto;
       }
-      @media only screen and (max-width: 480px) {
-        table#canspamBar td {
-          font-size: 14px !important;
+      .news {
+        text-align: center;
+      }
+      .news li {
+        line-height: 1.8em;
+        text-align: left;
+      }
+      .news-title {
+        text-align: left;
+      }
+      .icons-list li {
+        margin: 0 20px 0 0;
+      }
+      @media screen and (max-width: 480px) {
+        * {
+          font-size: 0.9rem;
         }
-      }
-      @media only screen and (max-width: 480px) {
-        table#canspamBar td a {
+        .container-table {
+          width: 100% !important;
+        }
+        #header-logo,
+        #footer-logo {
+          width: auto !important;
+          height: auto !important;
+          width: 100% !important;
+        }
+        #viewinbrowser,
+        #gcdclink {
+          float: none !important;
           display: block !important;
-          margin-top: 10px !important;
+          text-align: center !important;
+          font-size: 0.8em !important;
+        }
+        #viewinbrowser a,
+        #gcdclink a {
+          font-size: 0.85em;
+        }
+        .blogs {
+          width: 80% !important;
+          margin: 0 auto !important;
+        }
+        .blog-image,
+        .blog-content {
+          display: block !important;
+          text-align: center !important;
+          float: none !important;
+
+          width: 100% !important;
+        }
+        .news {
+          text-align: justify;
+        }
+        .topics {
+          text-align: center;
+        }
+        #social,
+        #social-icons {
+          display: block !important;
+          float: none !important;
+          text-align: center !important;
+          width: 100% !important;
+        }
+        #icons-list li {
+          margin: 0 1em 0 0;
         }
       }
     </style>
   </head>
   <body>
-    <!--  Wrapper Div Start -->
-    <div class="wrapper">
-      <!--  Outer Table Starts -->
-      <table class="outer-table" cellpadding="0" cellspacing="0" align="center">
+    <table
+      class="outer-table"
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      style="padding:0 0.2em;"
+    >
+      <tbody>
         <tr>
           <td>
-            <!-- Inner Table Starts -->
-            <table
-              class="inner-table"
-              cellpadding="0"
-              cellspacing="0"
-              align="center"
-            >
-              <tr>
-                <td>
-                  <!-- Header Table Starts -->
-                  <table
-                    class="header-table"
-                    cellpadding="0"
-                    cellspacing="0"
-                    align="center"
-                  >
-                    <tr>
-                      <td>
-                        <!-- Pre Headers-->
-                        <table
-                          class="pre-header-1"
-                          cellpadding="5"
-                          cellspacing="0"
-                          align="left"
-                        >
-                          <tr>
-                            <td
-                              align="left"
-                              style="font-size:.8rem;padding:0 2px;text-align:left;"
+            <center>
+              <table
+                class="container-table"
+                width="50%"
+                cellspacing="0"
+                cellpadding="0"
+              >
+                <tr>
+                  <td>
+                    <!-- Header -->
+                    <table class="header" cellspacing="0" cellpadding="0">
+                      <!-- Pre-header -->
+                      <tr>
+                        <td>
+                          <p style="display:inline-block" id="gcdclink">
+                            You are recieving this mail because you are a member
+                            of
+                            <a
+                              href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                              target="_blank"
+                              >GCDC Indore</a
                             >
-                              You are recieving this mail because you are a
-                              member of
-                              <a
-                                href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
-                                target="_blank"
-                                >GCDC Indore</a
-                              >
-                            </td>
-                          </tr>
-                        </table>
-
-                        <table
-                          class="pre-header-2"
-                          cellpadding="5"
-                          cellspacing="0"
-                          align="right"
-                        >
-                          <tr>
-                            <td
-                              align="right"
-                              style="font-size:.8rem;padding:0 2px;text-align:right;"
+                          </p>
+                          <p
+                            style="display:inline-block; text-align: right; float:right"
+                            id="viewinbrowser"
+                          >
+                            <a href="https://gcdcindore.dev" target="_blank"
+                              >View in Browser</a
                             >
-                              <a href="#" style="text-align:right;"
-                                >View in Browser</a
-                              >
-                            </td>
-                          </tr>
-                        </table>
+                          </p>
+                        </td>
+                      </tr>
+                      <!-- Header Image -->
+                      <tr>
+                        <td>
+                          <a href="https://gcdcindore.dev">
+                            <img
+                              id="header-logo"
+                              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/96e1e7e0-0754-4baa-9ea4-b0e48dd07c20.png"
+                              alt="GCDC Logo"
+                              width="100%"
+                          /></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="display:inline-block;width:49%" id="date">
+                            <strong>April, 2019</strong>
+                          </p>
+                          <p
+                            style="display:inline-block;width:49%; text-align: right"
+                          >
+                            <strong
+                              ><a href="https://gcdcindore.dev"
+                                >Archives</a
+                              ></strong
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
 
-                        <!-- Pre Header Ends -->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <!-- Header Logo Image -->
-                        <a href="#">
+                    <table
+                      class="blogs"
+                      cellspacing="0"
+                      cellpadding="5"
+                      align="center"
+                    >
+                      <tr>
+                        <td class="blog-container">
+                          <div class="blog-image">
+                            <img
+                              width="200"
+                              height="200"
+                              src="https://www.arctiq.ca/assets/posts/deploying-google-anthos-gke-on-prem-with-optiva/anthos.png"
+                              alt="Anthos"
+                            />
+                          </div>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Anthos</h3>
+                            <p class="blog-description">
+                              Anthos lets you build and manage modern hybrid
+                              applications across environments. It transforms
+                              your architectural approach, lets you focus on
+                              innovation, allows you to move faster than ever
+                              without compromising security or increasing
+                              complexity.
+                            </p>
+                            <a
+                              class="blog-link"
+                              href="https://cloud.google.com/anthos/"
+                              >Know More</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="blog-container">
+                          <div class="blog-image">
+                            <img
+                              width="200"
+                              height="200"
+                              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/91fa1907-ec60-4e33-ab8d-66d8dabaeabd.png"
+                              alt="Cloud Code"
+                            />
+                          </div>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Cloud Code</h3>
+                            <p class="blog-description">
+                              Cloud Code comes with tools to help you write,
+                              deploy, and debug cloud-native applications
+                              quickly and easily. Extensions to IDEs such as
+                              Visual Studio Code and IntelliJ are provided to
+                              let you rapidly iterate, debug, and deploy code to
+                              Kubernetes.
+                            </p>
+                            <a
+                              class="blog-link"
+                              href="https://cloud.google.com/code/docs/"
+                              >Know More</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="blog-container">
+                          <div class="blog-image">
+                            <img
+                              width="200"
+                              height="200"
+                              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/676dbc10-a0c6-4e1a-9fd0-4edfea3c0297.png"
+                              alt="Cloud Run"
+                            />
+                          </div>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Cloud Run</h3>
+                            <p class="blog-description">
+                              Cloud Run is a managed compute platform that
+                              enables you to run stateless containers that are
+                              invocable via HTTP requests. Cloud Run is
+                              serverless: it abstracts away all infrastructure
+                              management, so you can focus on what matters most
+                              — building great applications.
+                            </p>
+                            <a
+                              class="blog-link"
+                              href="https://cloud.google.com/run/"
+                              >Know More</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table class="topics" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <div class="news">
+                            <h3 class="news-title">Lorem, ipsum dolor.</h3>
+                            <ul class="news-list">
+                              <li>
+                                Open list source of all
+                                <a
+                                  href="https://github.com/gcdcindore/awesome-gcp-certifications"
+                                  target="_blank"
+                                  >GCP Certification</a
+                                >.
+                              </li>
+                              <li>
+                                Virtual machines on-demand! Learn more about
+                                <a
+                                  href="https://cloud.google.com/compute/"
+                                  target="_blank"
+                                  >compute engine</a
+                                >
+                                .
+                              </li>
+                              <li>
+                                <a
+                                  href="https://cloud.google.com/firestore"
+                                  target="_blank"
+                                  >Cloud Firestore</a
+                                >
+                                - A scalable NoSql database for the next
+                                generation.
+                              </li>
+                              <li>
+                                Learn
+                                <a
+                                  href="https://www.analyticsvidhya.com/blog/2019/04/introduction-deep-q-learning-python/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  >Deep Q-Learning</a
+                                >
+                                using open AI gym in python.
+                              </li>
+                              <li>
+                                Learn
+                                <a
+                                  href="https://www.analyticsvidhya.com/blog/2017/09/common-machine-learning-algorithms/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  >machine learning algorithms</a
+                                >
+                                using Python and R.
+                              </li>
+                              <li>
+                                Get insights on top
+                                <a
+                                  href="https://www.analyticsvidhya.com/blog/2019/04/top-5-machine-learning-github-reddit/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  >5 ML GitHub repositories and Reddit
+                                  discussions</a
+                                >
+                                .
+                              </li>
+                              <li>
+                                Give your Machine learning career a kick start
+                                by learning these
+                                <a
+                                  href="https://medium.freecodecamp.org/top-5-machine-learning-courses-for-2019-8a259572686e"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  >5 courses</a
+                                >
+                                !
+                              </li>
+                              <li>
+                                <a
+                                  href="https://medium.com/@akiranin/the-abcs-of-machine-learning-53376af9e5f9"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  >Machine Learning</a
+                                >
+                                basics in 15 minutes.
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.codementor.io/sayantinideb/java-vs-python-battle-of-the-best-tmz6ynvvn"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  >Java vs Python</a
+                                >
+                                - the battle of the best!
+                              </li>
+                              <li>
+                                <a
+                                  href="https://medium.com/@qwiklabs/hybrid-clouds-ca4db12c1042"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  >Anthos</a
+                                >
+                                - Run your application anywhere and make your
+                                own hybrid cloud.
+                              </li>
+                              <li>
+                                <a
+                                  href="https://towardsdatascience.com/data-visualization-using-matplotlib-16f1aae5ce70"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  >Matplotlib</a
+                                >
+                                - a 2D plotting library for visualizing figures.
+                              </li>
+                              <li>
+                                Blueprint of
+                                <a
+                                  href="https://towardsdatascience.com/a-guide-to-face-detection-in-python-3eab0f6b9fc1"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  >face detection algorithm</a
+                                >
+                                using OpenCV and DLib.
+                              </li>
+                              <li>
+                                Google’s guide to Machine Learning using
+                                <a
+                                  href="https://developers.google.com/machine-learning/crash-course/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  >TensorFlow API’s</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table class="footer" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <center>
+                            <p
+                              style="display:inline-block; float: left;text-align: justify"
+                              id="social"
+                            >
+                              Connect us on Social Platforms:
+                            </p>
+                            <div
+                              style="text-align: center;display: inline-block; float: right; width: 40%"
+                              id="social-icons"
+                            >
+                              <ul id="icons-list" style="list-style:none; ">
+                                <li style="display: inline">
+                                  <a href="https://www.facebook.com/gcdcindore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+                                      alt="Facebook"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline">
+                                  <a href="https://twitter.com/gcdcIndore"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
+                                      alt="Twitter"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline">
+                                  <a
+                                    href="https://www.instagram.com/gcdcindore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png"
+                                      alt="Instagram"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline">
+                                  <a
+                                    href="https://www.linkedin.com/in/google-cloud-developers-community-indore-984651172"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
+                                      alt="Linkedin"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline">
+                                  <a
+                                    href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
+                                      alt="Meetup"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
                           <img
-                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/96e1e7e0-0754-4baa-9ea4-b0e48dd07c20.png"
+                            id="footer-logo"
+                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a383fa84-80d7-4aba-8eb5-94eb75b91d6a.png"
                             alt="GCDC Logo"
                             width="100%"
-                        /></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <!-- Post Header Begins-->
-                        <!-- Month, Year-->
-                        <!-- Archives currently removed-->
-                        <table
-                          cellpadding="0"
-                          cellspacing="0"
-                          align="center"
-                          width="100%"
-                        >
-                          <!-- Change Width-->
-                          <tr style="text-align:center;">
-                            <td><strong>April, 2019</strong></td>
-                          </tr>
-                        </table>
-
-                        <!-- Post Header Ends -->
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-
-            <!-- Inner Table Ends here -->
+                          />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </center>
           </td>
         </tr>
-      </table>
-
-      <!-- Outer Table 1 Ends here -->
-      <!-- Outer Table 2 Starts here -->
-      <table class="outer-table" cellpadding="0" cellspacing="0" align="center">
-        <tr>
-          <td>
-            <!-- Inner Table Starts -->
-            <table
-              class="inner-table"
-              cellpadding="0"
-              cellspacing="0"
-              align="center"
-            >
-              <tr>
-                <td>
-                  <!-- Blog Container 1 Starts -->
-                  <table
-                    class="blogs"
-                    cellpadding="0"
-                    cellspacing="0"
-                    align="left"
-                  >
-                    <tr>
-                      <td>
-                        <!-- Image container 1 -->
-                        <table
-                          cellpadding="0"
-                          cellspacing="0"
-                          align="left"
-                          width="34%"
-                        >
-                          <tr>
-                            <td>
-                              <!-- Blog Image 1 -->
-                              <img
-                                width="200"
-                                height="200"
-                                src="https://www.arctiq.ca/assets/posts/deploying-google-anthos-gke-on-prem-with-optiva/anthos.png"
-                                alt="Anthos"
-                              />
-                            </td>
-                          </tr>
-                        </table>
-
-                        <!-- Content Container 1 -->
-                        <table
-                          cellpadding="0"
-                          cellspacing="0"
-                          align="left"
-                          width="65%"
-                        >
-                          <tr>
-                            <td>
-                              <!-- Blog Heading  1 -->
-                              <h3 style="margin:5px;">Anthos</h3>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <!-- Blog Content 1 -->
-                              <p>
-                                Anthos lets you build and manage modern hybrid
-                                applications across environments. It transforms
-                                your architectural approach, lets you focus on
-                                innovation, allows you to move faster than ever
-                                without compromising security or increasing
-                                complexity.
-                              </p>
-                            </td>
-                          </tr>
-                          <tr align="right">
-                            <td>
-                              <!-- Button 1 -->
-                              <a
-                                style="background:rgb(0,133,255);color:#FFFFFF;padding:5px 10px; margin:0 25px;border-radius:5px;"
-                                href="https://cloud.google.com/anthos/"
-                                target="_blank"
-                                >Know More</a
-                              >
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <!-- Blog Container Starts 2 -->
-                  <table
-                    class="blogs"
-                    cellpadding="0"
-                    cellspacing="0"
-                    align="left"
-                  >
-                    <tr>
-                      <td>
-                        <!-- Image container 2 -->
-                        <table
-                          cellpadding="0"
-                          cellspacing="0"
-                          align="left"
-                          width="34%"
-                        >
-                          <tr>
-                            <td>
-                              <!-- Blog Image 2 -->
-                              <img
-                                width="200"
-                                height="200"
-                                src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/91fa1907-ec60-4e33-ab8d-66d8dabaeabd.png"
-                                alt="Cloud Code"
-                              />
-                            </td>
-                          </tr>
-                        </table>
-
-                        <!-- Content Container 2 -->
-                        <table
-                          cellpadding="0"
-                          cellspacing="0"
-                          align="left"
-                          width="65%"
-                        >
-                          <tr>
-                            <td>
-                              <!-- Blog Heading 2 -->
-                              <h3 style="margin:5px;">Cloud Code</h3>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <!-- Blog Content 2 -->
-                              <p>
-                                Cloud Code comes with tools to help you write,
-                                deploy, and debug cloud-native applications
-                                quickly and easily. Extensions to IDEs such as
-                                Visual Studio Code and IntelliJ are provided to
-                                let you rapidly iterate, debug, and deploy code
-                                to Kubernetes.
-                              </p>
-                            </td>
-                          </tr>
-                          <tr align="right">
-                            <td>
-                              <!-- Button 2 -->
-                              <a
-                                style="background:rgb(0,133,255);color:#FFFFFF;padding:5px 10px; margin:0 25px;border-radius:5px;"
-                                href="https://cloud.google.com/code/docs/"
-                                target="_blank"
-                                >Know More</a
-                              >
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <!-- Blog Container Starts 3 -->
-                  <table
-                    class="blogs"
-                    cellpadding="0"
-                    cellspacing="0"
-                    align="left"
-                  >
-                    <tr>
-                      <td>
-                        <!-- Image container 3 -->
-                        <table
-                          cellpadding="0"
-                          cellspacing="0"
-                          align="left"
-                          width="34%"
-                        >
-                          <tr>
-                            <td>
-                              <!-- Blog Image 3  -->
-                              <img
-                                width="200"
-                                height="200"
-                                src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/676dbc10-a0c6-4e1a-9fd0-4edfea3c0297.png"
-                                alt="Cloud Run"
-                              />
-                            </td>
-                          </tr>
-                        </table>
-
-                        <!-- Content Container 3 -->
-                        <table
-                          cellpadding="0"
-                          cellspacing="0"
-                          align="left"
-                          width="65%"
-                        >
-                          <tr>
-                            <td>
-                              <!-- Blog Heading 3 -->
-                              <h3 style="margin:5px;">Cloud Run</h3>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <!-- Blog Content 3 -->
-                              <p>
-                                Cloud Run is a managed compute platform that
-                                enables you to run stateless containers that are
-                                invocable via HTTP requests. Cloud Run is
-                                serverless: it abstracts away all infrastructure
-                                management, so you can focus on what matters
-                                most — building great applications.
-                              </p>
-                            </td>
-                          </tr>
-                          <tr align="right">
-                            <td>
-                              <!-- Button 3 -->
-                              <a
-                                style="background:rgb(0,133,255);color:#FFFFFF;padding:5px 10px; margin:0 25px;border-radius:5px;"
-                                href="https://cloud.google.com/run/"
-                                target="_blank"
-                                >Know More</a
-                              >
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-
-            <!-- Inner table ends here -->
-          </td>
-        </tr>
-      </table>
-
-      <!-- Outer Table 2 Ends here -->
-      <!-- Outer Table 3 Begins here-->
-      <table class="outer-table" cellpadding="0" cellspacing="0" align="center">
-        <tr>
-          <td>
-            <!-- Inner Table Starts -->
-            <table
-              class="inner-table"
-              cellpadding="0"
-              cellspacing="0"
-              align="center"
-            >
-              <tr>
-                <td>
-                  <div class="news">
-                    <h3>Useful Links :</h3>
-                    <!-- List of Content begins here-->
-                    <ul>
-                      <li>
-                        Open list source of all
-                        <a
-                          href="https://github.com/gcdcindore/awesome-gcp-certifications"
-                          target="_blank"
-                          >GCP Certification</a
-                        >.
-                      </li>
-                      <li>
-                        Virtual machines on-demand! Learn more about
-                        <a
-                          href="https://cloud.google.com/compute/"
-                          target="_blank"
-                          >compute engine</a
-                        >
-                        .
-                      </li>
-                      <li>
-                        <a
-                          href="https://cloud.google.com/firestore"
-                          target="_blank"
-                          >Cloud Firestore</a
-                        >
-                        - A scalable NoSql database for the next generation.
-                      </li>
-                      <li>
-                        Learn
-                        <a
-                          href="https://www.analyticsvidhya.com/blog/2019/04/introduction-deep-q-learning-python/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Deep Q-Learning</a
-                        >
-                        using open AI gym in python.
-                      </li>
-                      <li>
-                        Learn
-                        <a
-                          href="https://www.analyticsvidhya.com/blog/2017/09/common-machine-learning-algorithms/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >machine learning algorithms</a
-                        >
-                        using Python and R.
-                      </li>
-                      <li>
-                        Get insights on top
-                        <a
-                          href="https://www.analyticsvidhya.com/blog/2019/04/top-5-machine-learning-github-reddit/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >5 ML GitHub repositories and Reddit discussions</a
-                        >
-                        .
-                      </li>
-                      <li>
-                        Give your Machine learning career a kick start by
-                        learning these
-                        <a
-                          href="https://medium.freecodecamp.org/top-5-machine-learning-courses-for-2019-8a259572686e"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >5 courses</a
-                        >
-                        !
-                      </li>
-                      <li>
-                        <a
-                          href="https://medium.com/@akiranin/the-abcs-of-machine-learning-53376af9e5f9"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Machine Learning</a
-                        >
-                        basics in 15 minutes.
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.codementor.io/sayantinideb/java-vs-python-battle-of-the-best-tmz6ynvvn"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Java vs Python</a
-                        >
-                        - the battle of the best!
-                      </li>
-                      <li>
-                        <a
-                          href="https://medium.com/@qwiklabs/hybrid-clouds-ca4db12c1042"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Anthos</a
-                        >
-                        - Run your application anywhere and make your own hybrid
-                        cloud.
-                      </li>
-                      <li>
-                        <a
-                          href="https://towardsdatascience.com/data-visualization-using-matplotlib-16f1aae5ce70"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Matplotlib</a
-                        >
-                        - a 2D plotting library for visualizing figures.
-                      </li>
-                      <li>
-                        Blueprint of
-                        <a
-                          href="https://towardsdatascience.com/a-guide-to-face-detection-in-python-3eab0f6b9fc1"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >face detection algorithm</a
-                        >
-                        using OpenCV and DLib.
-                      </li>
-                      <li>
-                        Google’s guide to Machine Learning using
-                        <a
-                          href="https://developers.google.com/machine-learning/crash-course/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >TensorFlow API’s</a
-                        >
-                      </li>
-                    </ul>
-                    <!-- List of Content ends here-->
-                  </div>
-                </td>
-              </tr>
-            </table>
-
-            <!-- Inner Table Ends here-->
-          </td>
-        </tr>
-      </table>
-
-      <!-- Outer Table 3 Ends here -->
-      <!-- Outer Table 4 begins here-->
-      <table class="outer-table" cellpadding="0" cellspacing="0" align="center">
-        <tr>
-          <td>
-            <!-- Inner Table Starts -->
-            <table
-              class="inner-table"
-              cellpadding="0"
-              cellspacing="0"
-              align="center"
-            >
-              <tr>
-                <td>
-                  <!-- Pre footer Starts here -->
-                  <table class="pre-footer" width="100%">
-                    <tr>
-                      <td>
-                        <!-- Text-->
-                        <table cellpadding="0" cellspacing="0" align="left">
-                          <tr>
-                            <td>
-                              Connect us on Social Platforms:
-                            </td>
-                          </tr>
-                        </table>
-
-                        <!-- Social Icons start here -->
-                        <table
-                          class="social-icons"
-                          cellpadding="0"
-                          cellspacing="5"
-                          align="right"
-                        >
-                          <tr>
-                            <td>
-                              <a href="https://www.facebook.com/gcdcindore/"
-                                ><img
-                                  src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
-                                  alt="Facebook"
-                              /></a>
-                            </td>
-                            <td>
-                              <a href="https://twitter.com/gcdcIndore"
-                                ><img
-                                  src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
-                                  alt="Twitter"
-                              /></a>
-                            </td>
-                            <td>
-                              <a href="https://www.instagram.com/gcdcindore/"
-                                ><img
-                                  src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png"
-                                  alt="Instagram"
-                              /></a>
-                            </td>
-                            <td>
-                              <a
-                                href="https://www.linkedin.com/in/google-cloud-developers-community-indore-984651172"
-                                ><img
-                                  src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
-                                  alt="Linkedin"
-                              /></a>
-                            </td>
-                            <td>
-                              <a
-                                href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
-                                ><img
-                                  src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
-                                  alt="Meetup"
-                              /></a>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <img
-                          src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a383fa84-80d7-4aba-8eb5-94eb75b91d6a.png"
-                          alt="GCDC Logo"
-                          width="100%"
-                        />
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- Pre footer ends here -->
-                </td>
-              </tr>
-            </table>
-
-            <!-- Inner Table Ends here-->
-          </td>
-        </tr>
-      </table>
-    </div>
-    <!-- End Wrapper-->
+      </tbody>
+    </table>
   </body>
 </html>

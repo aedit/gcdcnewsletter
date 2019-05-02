@@ -5,23 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>GCDC Responsive Template</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Google+Sans:400,500%7C"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
     <style>
+      * {
+        line-height: 1.4;
+        padding: 0.2em 0;
+      }
       body {
         background: white;
+        font-family: 'Google Sans', 'Open Sans', 'sans-serif';
       }
       table {
         border-collapse: collapse;
+        padding: 0;
+      }
+      .container-table {
+        background: white;
+        padding: 0 2px;
+      }
+      .blog-container {
+        margin: 20px;
+      }
+      .blog-title {
+        text-align: left;
+        margin: 5px;
       }
       .blog-image,
       .blog-content {
         display: inline-block;
         float: left;
+        text-align: center;
       }
       .blog-content {
         width: 60%;
       }
       .blog-image {
         width: 40%;
+      }
+      .blog-description {
+        text-align: justify;
+      }
+      .blog-link {
+        text-align: right;
+        background: rgb(0, 133, 255);
+        color: #ffffff;
+        padding: 5px 10px;
+        margin: 0 25px;
+        border-radius: 5px;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #2cf;
+        text-align: right;
+        width: 100%;
+      }
+      .topics {
+        margin: 0 auto;
       }
       .news {
         text-align: center;
@@ -31,22 +78,22 @@
         text-align: left;
       }
       .news-title {
-        text-align: center;
+        text-align: left;
       }
-
+      .icons-list li {
+        margin: 0 20px 0 0;
+      }
       @media screen and (max-width: 480px) {
         * {
-          font-size: 1.1rem;
+          font-size: 0.9rem;
         }
-        table[class='container-table'] {
-          max-width: 100% !important;
+        .container-table {
           width: 100% !important;
         }
         #header-logo,
         #footer-logo {
           width: auto !important;
           height: auto !important;
-          max-width: 100% !important;
           width: 100% !important;
         }
         #viewinbrowser,
@@ -61,7 +108,6 @@
           font-size: 0.85em;
         }
         .blogs {
-          max-width: 80% !important;
           width: 80% !important;
           margin: 0 auto !important;
         }
@@ -70,7 +116,7 @@
           display: block !important;
           text-align: center !important;
           float: none !important;
-          max-width: 100% !important;
+
           width: 100% !important;
         }
         .news {
@@ -84,7 +130,6 @@
           display: block !important;
           float: none !important;
           text-align: center !important;
-          max-width: 100% !important;
           width: 100% !important;
         }
         #icons-list li {
@@ -131,14 +176,16 @@
                             style="display:inline-block; text-align: right; float:right"
                             id="viewinbrowser"
                           >
-                            <a href="#">View in Browser</a>
+                            <a href="*|ARCHIVE|*" target="_blank"
+                              >View in Browser</a
+                            >
                           </p>
                         </td>
                       </tr>
                       <!-- Header Image -->
                       <tr>
                         <td>
-                          <a href="#">
+                          <a href="https://gcdcindore.dev">
                             <img
                               id="header-logo"
                               src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/96e1e7e0-0754-4baa-9ea4-b0e48dd07c20.png"
@@ -175,7 +222,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td class="blog-container">
                           <div class="blog-image">
                             <img
                               src="https://unsplash.it/200"
@@ -196,7 +243,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td class="blog-container">
                           <div class="blog-image">
                             <img
                               src="https://unsplash.it/200"
@@ -217,7 +264,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td class="blog-container">
                           <div class="blog-image">
                             <img
                               src="https://unsplash.it/200"
@@ -398,13 +445,13 @@
                         <td>
                           <center>
                             <p
-                              style="display:inline-block; float: left"
+                              style="display:inline-block; float: left;text-align: justify"
                               id="social"
                             >
                               Connect us on Social Platforms:
                             </p>
                             <div
-                              style="text-align: right;display: inline-block; float: right; width: 60%"
+                              style="text-align: center;display: inline-block; float: right; width: 40%"
                               id="social-icons"
                             >
                               <ul id="icons-list" style="list-style:none; ">
