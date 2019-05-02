@@ -83,7 +83,18 @@
       .icons-list li {
         margin: 0 20px 0 0;
       }
-      @media screen and (max-width: 480px) {
+
+      @media screen and (max-width: 768px) and (min-width: 678px) {
+        .container-table {
+          width: 80% !important;
+        }
+      }
+      @media screen and (max-width: 678px) and (min-width: 600px) {
+        .container-table {
+          width: 90% !important;
+        }
+      }
+      @media screen and (max-width: 600px) {
         * {
           font-size: 0.9rem;
         }
@@ -120,11 +131,13 @@
           width: 100% !important;
         }
         .news {
+          font-size: 1em;
           text-align: center !important;
+          max-width: 90% !important;
+          padding: 0 10px !important;
         }
         .topics {
           text-align: center !important;
-          width: 90% !important;
         }
         #social,
         #social-icons {
@@ -153,7 +166,7 @@
             <center>
               <table
                 class="container-table"
-                width="50%"
+                width="70%"
                 cellspacing="0"
                 cellpadding="0"
               >
@@ -308,135 +321,138 @@
                     <table class="topics" cellspacing="0" cellpadding="0">
                       <tr>
                         <td>
-                          <div class="news">
-                            <h3 class="news-title">Lorem, ipsum dolor.</h3>
-                            <ul class="news-list">
-                              <li>
-                                Open list source of all
-                                <a
-                                  href="https://github.com/gcdcindore/awesome-gcp-certifications"
-                                  target="_blank"
-                                  >GCP Certification</a
-                                >.
-                              </li>
-                              <li>
-                                Virtual machines on-demand! Learn more about
-                                <a
-                                  href="https://cloud.google.com/compute/"
-                                  target="_blank"
-                                  >compute engine</a
-                                >
-                                .
-                              </li>
-                              <li>
-                                <a
-                                  href="https://cloud.google.com/firestore"
-                                  target="_blank"
-                                  >Cloud Firestore</a
-                                >
-                                - A scalable NoSql database for the next
-                                generation.
-                              </li>
-                              <li>
-                                Learn
-                                <a
-                                  href="https://www.analyticsvidhya.com/blog/2019/04/introduction-deep-q-learning-python/"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >Deep Q-Learning</a
-                                >
-                                using open AI gym in python.
-                              </li>
-                              <li>
-                                Learn
-                                <a
-                                  href="https://www.analyticsvidhya.com/blog/2017/09/common-machine-learning-algorithms/"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >machine learning algorithms</a
-                                >
-                                using Python and R.
-                              </li>
-                              <li>
-                                Get insights on top
-                                <a
-                                  href="https://www.analyticsvidhya.com/blog/2019/04/top-5-machine-learning-github-reddit/"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >5 ML GitHub repositories and Reddit
-                                  discussions</a
-                                >
-                                .
-                              </li>
-                              <li>
-                                Give your Machine learning career a kick start
-                                by learning these
-                                <a
-                                  href="https://medium.freecodecamp.org/top-5-machine-learning-courses-for-2019-8a259572686e"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >5 courses</a
-                                >
-                                !
-                              </li>
-                              <li>
-                                <a
-                                  href="https://medium.com/@akiranin/the-abcs-of-machine-learning-53376af9e5f9"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >Machine Learning</a
-                                >
-                                basics in 15 minutes.
-                              </li>
-                              <li>
-                                <a
-                                  href="https://www.codementor.io/sayantinideb/java-vs-python-battle-of-the-best-tmz6ynvvn"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >Java vs Python</a
-                                >
-                                - the battle of the best!
-                              </li>
-                              <li>
-                                <a
-                                  href="https://medium.com/@qwiklabs/hybrid-clouds-ca4db12c1042"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >Anthos</a
-                                >
-                                - Run your application anywhere and make your
-                                own hybrid cloud.
-                              </li>
-                              <li>
-                                <a
-                                  href="https://towardsdatascience.com/data-visualization-using-matplotlib-16f1aae5ce70"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >Matplotlib</a
-                                >
-                                - a 2D plotting library for visualizing figures.
-                              </li>
-                              <li>
-                                Blueprint of
-                                <a
-                                  href="https://towardsdatascience.com/a-guide-to-face-detection-in-python-3eab0f6b9fc1"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >face detection algorithm</a
-                                >
-                                using OpenCV and DLib.
-                              </li>
-                              <li>
-                                Google’s guide to Machine Learning using
-                                <a
-                                  href="https://developers.google.com/machine-learning/crash-course/"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >TensorFlow API’s</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
+                          <center>
+                            <div class="news">
+                              <h3 class="news-title">Lorem, ipsum dolor.</h3>
+                              <ul class="news-list">
+                                <li>
+                                  Open list source of all
+                                  <a
+                                    href="https://github.com/gcdcindore/awesome-gcp-certifications"
+                                    target="_blank"
+                                    >GCP Certification</a
+                                  >.
+                                </li>
+                                <li>
+                                  Virtual machines on-demand! Learn more about
+                                  <a
+                                    href="https://cloud.google.com/compute/"
+                                    target="_blank"
+                                    >compute engine</a
+                                  >
+                                  .
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://cloud.google.com/firestore"
+                                    target="_blank"
+                                    >Cloud Firestore</a
+                                  >
+                                  - A scalable NoSql database for the next
+                                  generation.
+                                </li>
+                                <li>
+                                  Learn
+                                  <a
+                                    href="https://www.analyticsvidhya.com/blog/2019/04/introduction-deep-q-learning-python/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Deep Q-Learning</a
+                                  >
+                                  using open AI gym in python.
+                                </li>
+                                <li>
+                                  Learn
+                                  <a
+                                    href="https://www.analyticsvidhya.com/blog/2017/09/common-machine-learning-algorithms/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >machine learning algorithms</a
+                                  >
+                                  using Python and R.
+                                </li>
+                                <li>
+                                  Get insights on top
+                                  <a
+                                    href="https://www.analyticsvidhya.com/blog/2019/04/top-5-machine-learning-github-reddit/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >5 ML GitHub repositories and Reddit
+                                    discussions</a
+                                  >
+                                  .
+                                </li>
+                                <li>
+                                  Give your Machine learning career a kick start
+                                  by learning these
+                                  <a
+                                    href="https://medium.freecodecamp.org/top-5-machine-learning-courses-for-2019-8a259572686e"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >5 courses</a
+                                  >
+                                  !
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://medium.com/@akiranin/the-abcs-of-machine-learning-53376af9e5f9"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Machine Learning</a
+                                  >
+                                  basics in 15 minutes.
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.codementor.io/sayantinideb/java-vs-python-battle-of-the-best-tmz6ynvvn"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Java vs Python</a
+                                  >
+                                  - the battle of the best!
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://medium.com/@qwiklabs/hybrid-clouds-ca4db12c1042"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Anthos</a
+                                  >
+                                  - Run your application anywhere and make your
+                                  own hybrid cloud.
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://towardsdatascience.com/data-visualization-using-matplotlib-16f1aae5ce70"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Matplotlib</a
+                                  >
+                                  - a 2D plotting library for visualizing
+                                  figures.
+                                </li>
+                                <li>
+                                  Blueprint of
+                                  <a
+                                    href="https://towardsdatascience.com/a-guide-to-face-detection-in-python-3eab0f6b9fc1"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >face detection algorithm</a
+                                  >
+                                  using OpenCV and DLib.
+                                </li>
+                                <li>
+                                  Google’s guide to Machine Learning using
+                                  <a
+                                    href="https://developers.google.com/machine-learning/crash-course/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >TensorFlow API’s</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </center>
                         </td>
                       </tr>
                     </table>
