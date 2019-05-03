@@ -43,9 +43,10 @@
       align-items: center;
       text-align: right;
     }
-    .template {
+    .template,
+    .tempbuilder {
       text-align: center;
-      margin: 0.4em 0.2em;
+      margin: 0.8em 0.2em;
     }
     .container {
       display: flex;
@@ -57,6 +58,7 @@
     .container > h2 {
       flex: 1 1 100%;
       padding: 0.6em 0;
+      text-align: center;
     }
     .promotions {
       text-align: right;
@@ -100,15 +102,53 @@
       z-index: 10;
       width: 200px;
       background-color: black;
-      border-radius: 6px;
+      border-radius: 10px;
       padding: 5px 0;
       text-align: center;
       color: #fff;
-
       margin-top: 20px;
     }
-    .tooltip:hover .tooltiptext {
-      visibility: visible;
+    .tooltip:hover .tooltiptext,
+    .tempbuilder:hover .tempbuildertooltip {
+      animation: popdown 1.5s ease-out;
+    }
+    .tempbuildertooltip {
+      visibility: hidden;
+      position: absolute;
+      z-index: 10;
+      width: 200px;
+      background-color: black;
+      border-radius: 10px;
+      padding: 5px 0;
+      text-align: center;
+      color: #fff;
+      margin-top: 20px;
+      margin: 20px auto;
+      left: 40%;
+    }
+    .tempbuilder {
+      cursor: pointer;
+    }
+
+    @keyframes popdown {
+      from {
+        visibility: visible;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .outer-wrapper {
+        width: 100%;
+        font-size: 0.8em;
+      }
+      .inner-wrapper {
+        width: 100%;
+      }
     }
   </style>
   <body>
@@ -124,18 +164,17 @@
         <div class="template">
           Check out our template <a href="./template.html">here</a>.
         </div>
+        <div class="tempbuilder">
+          Customize the newsletter by the template
+          <a href="./tempbuilder.html">here</a>.
+          <span class="tempbuildertooltip"> Coming Soon</span>
+        </div>
         <div class="container">
           <h2>Archives</h2>
           <div class="newsletter">
             <h3>Find our Newsletters here</h3>
             <ul>
-              <li><a href="Newsletters/april2019.html">April 2019</a></li>
-              <li>
-                <a class="tooltip" href=""
-                  ><span class="tooltiptext">Content Unavailable</span>May
-                  2019</a
-                >
-              </li>
+              <li><a href="Newsletters/may2019.html">May 2019</a></li>
               <li>
                 <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>June
@@ -154,7 +193,12 @@
                   2019</a
                 >
               </li>
-              <span class="tooltiptext">Unavailable Currently</span>
+              <li>
+                <a class="tooltip" href=""
+                  ><span class="tooltiptext">Content Unavailable</span>September
+                  2019</a
+                >
+              </li>
             </ul>
           </div>
           <div class="promotions">
@@ -162,12 +206,6 @@
             <ul>
               <li>
                 <a class="tooltip" href=""
-                  ><span class="tooltiptext">Content Unavailable</span>April
-                  2019</a
-                >
-              </li>
-              <li>
-                <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>May
                   2019</a
                 >
@@ -187,6 +225,12 @@
               <li>
                 <a class="tooltip" href=""
                   ><span class="tooltiptext">Content Unavailable</span>August
+                  2019</a
+                >
+              </li>
+              <li>
+                <a class="tooltip" href=""
+                  ><span class="tooltiptext">Content Unavailable</span>September
                   2019</a
                 >
               </li>
@@ -211,7 +255,11 @@
               src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png"
               alt="Instagram"
           /></a>
-
+          <a href="https://gcdcindore.dev"
+            ><img
+              src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png"
+              alt="GcdcIndore"
+          /></a>
           <a
             href="https://www.linkedin.com/in/google-cloud-developers-community-indore-984651172"
             ><img

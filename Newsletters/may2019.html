@@ -67,6 +67,11 @@
         text-align: right;
         width: 100%;
       }
+      hr {
+        line-height: 0;
+        padding: 0;
+        font-weight: bold;
+      }
       .topics {
         margin: 0 auto;
       }
@@ -85,6 +90,10 @@
       }
 
       @media screen and (max-width: 1080px) {
+        .container-table {
+          width: 70% !important;
+        }
+
         #viewinbrowser,
         #gcdclink {
           float: none !important;
@@ -94,31 +103,23 @@
         }
       }
 
-      @media screen and (max-width: 768px) and (min-width: 678px) {
+      @media screen and (max-width: 868px) and (min-width: 768px) {
         .container-table {
           width: 80% !important;
         }
-        #viewinbrowser,
-        #gcdclink {
-          float: none !important;
-          display: block !important;
-          text-align: center !important;
-          font-size: 0.8em !important;
-        }
       }
-      @media screen and (max-width: 678px) and (min-width: 600px) {
+      @media screen and (max-width: 768px) and (min-width: 678px) {
         .container-table {
           width: 90% !important;
         }
-        #viewinbrowser,
-        #gcdclink {
-          float: none !important;
-          display: block !important;
-          text-align: center !important;
-          font-size: 0.8em !important;
+      }
+      @media screen and (max-width: 678px) and (min-width: 640px) {
+        .container-table {
+          width: 95% !important;
         }
       }
-      @media screen and (max-width: 600px) {
+
+      @media screen and (max-width: 640px) {
         * {
           font-size: 0.9rem;
         }
@@ -253,6 +254,7 @@
                       </tr>
                     </table>
 
+                    <hr />
                     <table
                       class="blogs"
                       cellspacing="0"
@@ -263,8 +265,8 @@
                         <td class="blog-container">
                           <div class="blog-image">
                             <img
-                              width="200"
-                              height="200"
+                              width="250"
+                              height="250"
                               src="https://www.arctiq.ca/assets/posts/deploying-google-anthos-gke-on-prem-with-optiva/anthos.png"
                               alt="Anthos"
                             />
@@ -287,12 +289,13 @@
                           </div>
                         </td>
                       </tr>
+
                       <tr>
                         <td class="blog-container">
                           <div class="blog-image">
                             <img
-                              width="200"
-                              height="200"
+                              width="250"
+                              height="250"
                               src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/91fa1907-ec60-4e33-ab8d-66d8dabaeabd.png"
                               alt="Cloud Code"
                             />
@@ -319,8 +322,8 @@
                         <td class="blog-container">
                           <div class="blog-image">
                             <img
-                              width="200"
-                              height="200"
+                              width="250"
+                              height="250"
                               src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/676dbc10-a0c6-4e1a-9fd0-4edfea3c0297.png"
                               alt="Cloud Run"
                             />
@@ -345,6 +348,7 @@
                       </tr>
                     </table>
 
+                    <hr />
                     <table class="topics" cellspacing="0" cellpadding="0">
                       <tr>
                         <td>
@@ -543,6 +547,7 @@
                       </tr>
                     </table>
 
+                    <hr />
                     <table class="footer" cellspacing="0" cellpadding="0">
                       <tr>
                         <td>
