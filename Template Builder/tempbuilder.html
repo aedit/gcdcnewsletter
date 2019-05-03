@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GCDC Responsive Template</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Google+Sans:400,500%7C"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        line-height: 1.4;
+        padding: 0.2em 0;
+      }
+      body {
+        background: white;
+        font-family: 'Google Sans', 'Open Sans', 'sans-serif';
+      }
+      table {
+        border-collapse: collapse;
+        padding: 0;
+      }
+      .container-table {
+        background: white;
+        padding: 0 2px;
+      }
+      .blog-container {
+        margin: 20px;
+      }
+      .blog-title {
+        text-align: left;
+        margin: 5px;
+      }
+      .blog-image,
+      .blog-content {
+        display: inline-block;
+        float: left;
+        text-align: center;
+      }
+      .blog-content {
+        width: 60%;
+      }
+      .blog-image {
+        width: 40%;
+      }
+      .blog-description {
+        text-align: justify;
+      }
+      .blog-link {
+        background: rgb(0, 133, 255);
+        color: #ffffff;
+        padding: 5px 10px;
+        float: right;
+        width: auto;
+        border-radius: 5px;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #2cf;
+        text-align: right;
+        width: 100%;
+      }
+      hr {
+        line-height: 0;
+        padding: 0;
+        font-weight: bold;
+      }
+      .topics {
+        margin: 0 auto;
+      }
+      .news {
+        text-align: center;
+      }
+      .news li {
+        line-height: 1.8em;
+        text-align: left;
+      }
+      .news-title {
+        text-align: left;
+      }
+      .icons-list li {
+        margin: 0 20px 0 0;
+      }
+
+      @media screen and (max-width: 1080px) {
+        .container-table {
+          width: 80% !important;
+        }
+
+        #viewinbrowser,
+        #gcdclink {
+          float: none !important;
+          display: block !important;
+          text-align: center !important;
+          font-size: 0.8em !important;
+        }
+      }
+      @media screen and (max-width: 810px) and (min-width: 678px) {
+        .container-table {
+          width: 95% !important;
+        }
+      }
+
+      @media screen and (max-width: 678px) {
+        * {
+          font-size: 0.9rem;
+        }
+        .container-table {
+          width: 100% !important;
+        }
+        #header-logo,
+        #footer-logo {
+          width: auto !important;
+          height: auto !important;
+          width: 100% !important;
+        }
+        #viewinbrowser,
+        #gcdclink {
+          float: none !important;
+          display: block !important;
+          text-align: center !important;
+          font-size: 0.8em !important;
+        }
+        #viewinbrowser a,
+        #gcdclink a {
+          font-size: 0.85em;
+        }
+        .blogs {
+          width: 80% !important;
+          margin: 0 auto !important;
+        }
+        .blog-image,
+        .blog-content {
+          display: block !important;
+          text-align: center !important;
+          float: none !important;
+          width: 100% !important;
+        }
+        .blog-link {
+          width: auto !important;
+          float: none !important;
+        }
+        .news {
+          font-size: 1em;
+          text-align: center !important;
+          max-width: 90% !important;
+          padding: 0 10px !important;
+        }
+        .topics {
+          text-align: center !important;
+        }
+
+        #social-icons {
+          display: block !important;
+          float: none !important;
+          text-align: center !important;
+          width: 100% !important;
+        }
+        #social,
+        #ratestar {
+          line-height: 1em;
+          display: inline-block !important;
+          float: none !important;
+          width: 25% !important;
+        }
+        #ratestar * {
+          padding: 0 !important;
+        }
+        #ratestar {
+          padding: 0 !important;
+        }
+        #icons-list li {
+          margin: 0 1em 0 0 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      class="outer-table"
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      style="padding:0 0.2em;"
+    >
+      <tbody>
+        <tr>
+          <td>
+            <center>
+              <table
+                class="container-table"
+                width="50%"
+                cellspacing="0"
+                cellpadding="0"
+              >
+                <tr>
+                  <td>
+                    <!-- Header -->
+                    <table class="header" cellspacing="0" cellpadding="0">
+                      <!-- Pre-header -->
+                      <tr>
+                        <td>
+                          <p style="display:inline-block" id="gcdclink">
+                            You are recieving this mail because you are a member
+                            of
+                            <a
+                              href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                              target="_blank"
+                              >GCDC Indore</a
+                            >
+                          </p>
+                          <p
+                            style="display:inline-block; text-align: right; float:right"
+                            id="viewinbrowser"
+                          >
+                            <a href="*|ARCHIVE|*" target="_blank"
+                              >View in Browser</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                      <!-- Header Image -->
+                      <tr>
+                        <td>
+                          <a href="https://gcdcindore.dev">
+                            <img
+                              id="header-logo"
+                              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/96e1e7e0-0754-4baa-9ea4-b0e48dd07c20.png"
+                              alt="GCDC Logo"
+                              width="100%"
+                          /></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="display:inline-block;width:49%" id="date">
+                            <strong>Month, Year</strong>
+                          </p>
+                          <p
+                            style="display:inline-block;width:49%; text-align: right"
+                          >
+                            <strong><a href="">Archives</a></strong>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+                    <table
+                      class="blogs"
+                      cellspacing="0"
+                      cellpadding="5"
+                      align="center"
+                    >
+                      <tr>
+                        <td>
+                          <h2 style="text-align:center">
+                            Topics
+                          </h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="blog-container">
+                          <div class="blog-image">
+                            <img
+                              width="250"
+                              height="250"
+                              src="https://unsplash.it/200"
+                              alt="blogimage"
+                            />
+                          </div>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Blog Title</h3>
+                            <p class="blog-description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Cupiditate incidunt placeat, necessitatibus
+                              praesentium rem magni labore officia, dolores
+                              sapiente itaque, repellendus excepturi quam eius
+                              quod sed facere id ab perspiciatis!
+                            </p>
+                            <a class="blog-link" href="">Know More</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="blog-container">
+                          <div class="blog-image">
+                            <img
+                              width="250"
+                              height="250"
+                              src="https://unsplash.it/200"
+                              alt="blogimage"
+                            />
+                          </div>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Blog Title</h3>
+                            <p class="blog-description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Cupiditate incidunt placeat, necessitatibus
+                              praesentium rem magni labore officia, dolores
+                              sapiente itaque, repellendus excepturi quam eius
+                              quod sed facere id ab perspiciatis!
+                            </p>
+                            <a class="blog-link" href="">Know More</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="blog-container">
+                          <div class="blog-image">
+                            <img
+                              width="250"
+                              height="250"
+                              src="https://unsplash.it/200"
+                              alt="blogimage"
+                            />
+                          </div>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Blog Title</h3>
+                            <p class="blog-description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Cupiditate incidunt placeat, necessitatibus
+                              praesentium rem magni labore officia, dolores
+                              sapiente itaque, repellendus excepturi quam eius
+                              quod sed facere id ab perspiciatis!
+                            </p>
+                            <a class="blog-link" href="">Know More</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+                    <table class="topics" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <center>
+                            <div class="news">
+                              <h3 class="news-title">Lorem, ipsum dolor.</h3>
+                              <ul class="news-list">
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <center>
+                            <div class="news">
+                              <h3 class="news-title">Lorem, ipsum dolor.</h3>
+                              <ul class="news-list">
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <center>
+                            <div class="news">
+                              <h3 class="news-title">Lorem, ipsum dolor.</h3>
+                              <ul class="news-list">
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Vitae, voluptate!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Rerum, nesciunt!
+                                </li>
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+                    <table class="footer" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <center>
+                            <p
+                              style="display:inline-block; float: left;text-align: justify"
+                              id="social"
+                            >
+                              Rate this newsletter:
+                            </p>
+                            <a href="">
+                              <ul
+                                id="ratestar"
+                                style="list-style: none; float:left; display:inline; width:25%; text-align: center"
+                              >
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                              </ul>
+                            </a>
+                            <div
+                              style="text-align: center;display: inline-block; float: right; width: 40%"
+                              id="social-icons"
+                            >
+                              <ul id="icons-list" style="list-style:none; ">
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a href="https://www.facebook.com/gcdcindore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+                                      alt="Facebook"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a href="https://twitter.com/gcdcIndore"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
+                                      alt="Twitter"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.instagram.com/gcdcindore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png"
+                                      alt="Instagram"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.linkedin.com/in/google-cloud-developers-community-indore-984651172"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
+                                      alt="Linkedin"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a href="https://gcdcindore.dev"
+                                    ><img
+                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png"
+                                      alt="GcdcIndore"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
+                                      alt="Meetup"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            id="footer-logo"
+                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a383fa84-80d7-4aba-8eb5-94eb75b91d6a.png"
+                            alt="GCDC Logo"
+                            width="100%"
+                          />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
