@@ -91,7 +91,7 @@
 
       @media screen and (max-width: 1080px) {
         .container-table {
-          width: 70% !important;
+          width: 80% !important;
         }
 
         #viewinbrowser,
@@ -102,24 +102,13 @@
           font-size: 0.8em !important;
         }
       }
-
-      @media screen and (max-width: 868px) and (min-width: 768px) {
-        .container-table {
-          width: 80% !important;
-        }
-      }
-      @media screen and (max-width: 768px) and (min-width: 678px) {
-        .container-table {
-          width: 90% !important;
-        }
-      }
-      @media screen and (max-width: 678px) and (min-width: 640px) {
+      @media screen and (max-width: 810px) and (min-width: 678px) {
         .container-table {
           width: 95% !important;
         }
       }
 
-      @media screen and (max-width: 640px) {
+      @media screen and (max-width: 678px) {
         * {
           font-size: 0.9rem;
         }
@@ -167,12 +156,25 @@
         .topics {
           text-align: center !important;
         }
-        #social,
+
         #social-icons {
           display: block !important;
           float: none !important;
           text-align: center !important;
           width: 100% !important;
+        }
+        #social,
+        #ratestar {
+          line-height: 1em;
+          display: inline-block !important;
+          float: none !important;
+          width: 25% !important;
+        }
+        #ratestar * {
+          padding: 0 !important;
+        }
+        #ratestar {
+          padding: 0 !important;
         }
         #icons-list li {
           margin: 0 1em 0 0 !important;
@@ -556,8 +558,53 @@
                               style="display:inline-block; float: left;text-align: justify"
                               id="social"
                             >
-                              Connect us on Social Platforms:
+                              Rate this newsletter:
                             </p>
+                            <a
+                              href="https://forms.gle/6kEykUP8B9868JvA6"
+                              target="_blank"
+                            >
+                              <ul
+                                id="ratestar"
+                                style="list-style: none; float:left; display:inline-block; width:25%; text-align: center"
+                              >
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                              </ul>
+                            </a>
                             <div
                               style="text-align: center;display: inline-block; float: right; width: 40%"
                               id="social-icons"
