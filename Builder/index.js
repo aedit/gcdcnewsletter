@@ -3,7 +3,7 @@ const date = document.querySelector('#date')
 const blogimage = Array.from(document.querySelectorAll('.blog-image'))
 const blogtitle = Array.from(document.querySelectorAll('.blog-title'))
 const blogdescription = Array.from(
-  document.querySelectorAll('.blog-description')
+  document.querySelectorAll('.blog-description'),
 )
 const bloglink = Array.from(document.querySelectorAll('.blog-link'))
 const newstitle = Array.from(document.querySelectorAll('.news-title'))
@@ -19,7 +19,7 @@ const elements = [
   ...bloglink,
   ...blogtitle,
   ...newslist,
-  ...newstitle
+  ...newstitle,
 ]
 
 elements.forEach(e => {
