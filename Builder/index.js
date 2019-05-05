@@ -12,6 +12,7 @@ const overlay = document.querySelector('.overlay')
 const textarea = document.querySelector('#replace')
 const insert = document.querySelector('#insert')
 const code = document.querySelector('#code')
+const close = document.querySelector('#close')
 const htmlsection = document.querySelector('.html')
 const htmlcode = document.querySelector('#html-code')
 const htmlcopy = document.querySelector('#html-copy')
@@ -59,7 +60,11 @@ elements.forEach(e => {
     }
     overlay.classList.add('display')
 
-    const textAreaEvtListener = e => {
+    close.addEventListener('click', e => {
+      overlay.classList.remove('display')
+    })
+
+    insert.addEventListener('click', e => {
       switch (ele.localName) {
         case 'a':
           ele.href = textarea.value
@@ -72,7 +77,6 @@ elements.forEach(e => {
       }
       insert.removeEventListener('click', textAreaEvtListener)
       overlay.classList.remove('display')
-    }
-    insert.addEventListener('click', textAreaEvtListener)
+    })
   })
 })
