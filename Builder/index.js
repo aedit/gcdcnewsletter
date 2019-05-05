@@ -8,7 +8,14 @@ const blogdescription = Array.from(
 const bloglink = Array.from(document.querySelectorAll('.blog-link'))
 const newstitle = Array.from(document.querySelectorAll('.news-title'))
 const newslist = Array.from(document.querySelectorAll('.news-list li'))
-const overlay = document.querySelector('#replace')
+const overlay = document.querySelector('.overlay')
+const textarea = document.querySelector('#replace')
+const insert = document.querySelector('#insert')
+const code = document.querySelector('#code')
+const htmlsection = document.querySelector('.html')
+const htmlcode = document.querySelector('#html-code')
+const htmlcopy = document.querySelector('#html-copy')
+const htmlclose = document.querySelector('#html-close')
 
 const elements = [
   vinb,
@@ -21,37 +28,51 @@ const elements = [
   ...newstitle,
 ]
 
+code.addEventListener('click', evt => {
+  overlay.classList.remove('display')
+  htmlsection.classList.add('display')
+
+  htmlcode.value = document.documentElement.outerHTML
+  htmlcopy.addEventListener('click', evt => {
+    htmlcode.select()
+    document.execCommand('copy')
+  })
+  htmlclose.addEventListener('click', evt => {
+    htmlsection.classList.remove('display')
+  })
+})
+
 elements.forEach(e => {
   e.addEventListener('click', evt => {
+    evt.preventDefault()
     const ele = evt.target
-    overlay.value = ''
+    textarea.value = ''
     switch (ele.localName) {
       case 'a':
-        overlay.value = ele.href
+        textarea.value = ele.href
         break
       case 'img':
-        overlay.value = ele.src
+        textarea.value = ele.src
         break
       default:
-        overlay.value = ele.innerHTML.trim()
+        textarea.value = ele.innerHTML.trim()
     }
     overlay.classList.add('display')
+
     const textAreaEvtListener = e => {
-      if (e.code === 'Backquote') {
-        switch (ele.localName) {
-          case 'a':
-            ele.href = overlay.value
-            break
-          case 'img':
-            ele.src = overlay.value
-            break
-          default:
-            ele.innerHTML = overlay.value
-        }
-        overlay.removeEventListener('keypress', textAreaEvtListener)
-        overlay.classList.remove('display')
+      switch (ele.localName) {
+        case 'a':
+          ele.href = textarea.value
+          break
+        case 'img':
+          ele.src = textarea.value
+          break
+        default:
+          ele.innerHTML = textarea.value
       }
+      insert.removeEventListener('click', textAreaEvtListener)
+      overlay.classList.remove('display')
     }
-    overlay.addEventListener('keypress', textAreaEvtListener)
+    insert.addEventListener('click', textAreaEvtListener)
   })
 })

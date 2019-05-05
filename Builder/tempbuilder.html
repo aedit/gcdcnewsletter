@@ -89,17 +89,39 @@
       .icons-list li {
         margin: 0 20px 0 0;
       }
-      textarea {
+      .overlay,
+      .html {
         display: none;
       }
+
       .display {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255, 0.9);
         position: fixed;
         z-index: 100;
         box-shadow: 0 0 100vh rgba(0, 0, 0, 0.4);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        padding: 10px;
+      }
+
+      #insert,
+      #code,
+      #html-copy,
+      #html-close {
+        display: inline;
+        text-align: center;
+        background: rgb(0, 133, 255);
+        color: #ffffff;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #html-close {
+        background: rgb(255, 0, 43);
       }
 
       @media screen and (max-width: 1080px) {
@@ -191,6 +213,9 @@
         }
         #icons-list li {
           margin: 0 1em 0 0 !important;
+        }
+        .display {
+          width: 100% !important;
         }
       }
     </style>
@@ -644,7 +669,16 @@
         </tr>
       </tbody>
     </table>
-    <textarea id="replace" rows="10" cols="80"></textarea>
+    <div class="overlay">
+      <textarea id="replace" rows="10" cols="80"></textarea>
+      <span id="insert">Insert</span>
+      <span id="code">Code</span>
+    </div>
+    <div class="html">
+      <textarea id="html-code" cols="100" rows="20"></textarea>
+      <span id="html-copy">Copy</span>
+      <span id="html-close">Close</span>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
