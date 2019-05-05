@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
     />
-    <script src="index.js"></script>
+
     <style>
       * {
         line-height: 1.4;
@@ -88,6 +88,18 @@
       }
       .icons-list li {
         margin: 0 20px 0 0;
+      }
+      textarea {
+        display: none;
+      }
+      .display {
+        display: block;
+        position: fixed;
+        z-index: 100;
+        box-shadow: 0 0 100vh rgba(0, 0, 0, 0.4);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       @media screen and (max-width: 1080px) {
@@ -632,5 +644,7 @@
         </tr>
       </tbody>
     </table>
+    <textarea id="replace" rows="10" cols="80"></textarea>
+    <script src="./index.js"></script>
   </body>
 </html>

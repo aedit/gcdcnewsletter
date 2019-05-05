@@ -8,8 +8,7 @@ const blogdescription = Array.from(
 const bloglink = Array.from(document.querySelectorAll('.blog-link'))
 const newstitle = Array.from(document.querySelectorAll('.news-title'))
 const newslist = Array.from(document.querySelectorAll('.news-list li'))
-const overlay = document.querySelector('#overlay')
-const inputtext = document.querySelector('#inputtext')
+const overlay = document.querySelector('#replace')
 
 const elements = [
   vinb,
@@ -24,7 +23,35 @@ const elements = [
 
 elements.forEach(e => {
   e.addEventListener('click', evt => {
-    overlay.classList.add('visible')
-    console.log('f')
+    const ele = evt.target
+    overlay.value = ''
+    switch (ele.localName) {
+      case 'a':
+        overlay.value = ele.href
+        break
+      case 'img':
+        overlay.value = ele.src
+        break
+      default:
+        overlay.value = ele.innerHTML.trim()
+    }
+    overlay.classList.add('display')
+    const textAreaEvtListener = e => {
+      if (e.code === 'Backquote') {
+        switch (ele.localName) {
+          case 'a':
+            ele.href = overlay.value
+            break
+          case 'img':
+            ele.src = overlay.value
+            break
+          default:
+            ele.innerHTML = overlay.value
+        }
+        overlay.removeEventListener('keypress', textAreaEvtListener)
+        overlay.classList.remove('display')
+      }
+    }
+    overlay.addEventListener('keypress', textAreaEvtListener)
   })
 })
