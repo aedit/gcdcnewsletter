@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GCDC Responsive Template</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Google+Sans:400,500%7C"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        line-height: 1.4;
+        padding: 0.2em 0;
+      }
+      body {
+        background: white;
+        font-family: 'Google Sans', 'Open Sans', 'sans-serif';
+      }
+      table {
+        border-collapse: collapse;
+        padding: 0;
+      }
+      .container-table {
+        background: white;
+        padding: 0 2px;
+      }
+
+      .image,
+      .session {
+        display: inline-block;
+        text-align: justify;
+      }
+      .session {
+        width: 50%;
+        float: right;
+      }
+
+      .image {
+        float: left;
+        width: 40%;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #2cf;
+        text-align: right;
+        width: 100%;
+      }
+      .implinks {
+        display: inline-block;
+        float: left;
+        width: 70%;
+      }
+      .slide {
+        display: inline-block;
+        float: left;
+      }
+      .implinks a {
+        width: 20%;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        margin: 5px 25px;
+        background: #2cf;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.4);
+      }
+      .slide a {
+        text-decoration: none;
+        padding: 5px 25px;
+        background: #f5b818;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.4);
+      }
+      hr {
+        line-height: 0;
+        padding: 0;
+        font-weight: bold;
+      }
+
+      .icons-list li {
+        margin: 0 20px 0 0;
+      }
+
+      @media screen and (max-width: 1080px) {
+        .container-table {
+          width: 80% !important;
+        }
+        .session {
+          margin: 0;
+        }
+        #viewinbrowser,
+        #gcdclink {
+          float: none !important;
+          display: block !important;
+          text-align: center !important;
+          font-size: 0.8em !important;
+        }
+      }
+      @media screen and (max-width: 810px) and (min-width: 678px) {
+        .container-table {
+          width: 95% !important;
+        }
+      }
+
+      @media screen and (max-width: 678px) {
+        * {
+          /* font-size: 0.9rem; */
+        }
+        .container-table {
+          width: 100% !important;
+        }
+        #header-logo {
+          width: 95% !important;
+          height: auto !important;
+        }
+        #footer-logo {
+          width: 90% !important;
+          height: auto !important;
+        }
+        #policy,
+        #gcdclink {
+          float: none !important;
+          display: block !important;
+          text-align: center !important;
+          font-size: 0.8em !important;
+        }
+        #policy a,
+        #gcdclink a {
+          font-size: 0.85em;
+        }
+        .image,
+        .session {
+          display: block !important;
+          text-align: center !important;
+          float: none !important;
+          width: 100% !important;
+        }
+        .session {
+          text-align: left !important;
+          margin: 0 auto;
+          width: 80% !important;
+        }
+        .implinks,
+        .slide {
+          display: block !important;
+          float: none !important;
+          width: 80% !important;
+          margin: 0 auto !important;
+        }
+        .implinks a {
+          margin: 5px 0 !important;
+          width: 32% !important;
+        }
+        .slide {
+          width: 60% !important;
+        }
+        .slide a {
+          padding: 5px 0 !important;
+        }
+        #social-icons {
+          display: block !important;
+          float: none !important;
+          text-align: center !important;
+          width: 100% !important;
+        }
+        #social,
+        #ratestar {
+          line-height: 1em;
+          display: inline-block !important;
+          float: none !important;
+          width: 25% !important;
+          font-size: 1em;
+        }
+        #ratestar * {
+          padding: 0 !important;
+        }
+
+        #icons-list li {
+          margin: 0 1em 0 0 !important;
+        }
+      }
+      @media screen and (max-width: 485px) {
+        #social {
+          font-size: 0.8em !important;
+          text-align: left !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      class="outer-table"
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      style="padding:0 0.2em;"
+    >
+      <tbody>
+        <tr>
+          <td>
+            <center>
+              <table
+                class="container-table"
+                width="60%"
+                cellspacing="0"
+                cellpadding="0"
+              >
+                <tr>
+                  <td>
+                    <!-- Header -->
+                    <table class="header" cellspacing="0" cellpadding="0">
+                      <!-- Pre-header -->
+
+                      <!-- Header Image -->
+                      <tr>
+                        <td style="background:#222f3e;text-align: center">
+                          <a href="https://gcdcindore.dev">
+                            <img
+                              id="header-logo"
+                              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/133da732-e365-48e9-93d2-a31073df6607.png"
+                              alt="GCDC Logo"
+                              width="95%"
+                              style="padding: 10px;"
+                          /></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="display:inline-block;width:49%" id="date">
+                            <strong>May, 2019</strong>
+                          </p>
+                          <p
+                            style="display:inline-block;width:49%; text-align: right"
+                            id="event"
+                          >
+                            <strong>Cloud Next Extended '19</strong>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+
+                    <table
+                      class="eventdescription"
+                      cellspacing="0"
+                      cellpadding="0"
+                      align="center"
+                      width="90%"
+                    >
+                      <tr>
+                        <td>
+                          <h3 style="text-align: center;">Event Description</h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="text-align: justify;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque architecto fuga reprehenderit
+                            repudiandae quibusdam exercitationem sunt ipsum
+                            pariatur sit debitis autem quam dolore eaque
+                            voluptatem deleniti necessitatibus, rem magni at
+                            facilis, quos impedit. Reprehenderit perspiciatis
+                            error tempora dolore. Cum tempora quasi mollitia quo
+                            tempore fugit ab dolores earum beatae porro?
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+                    <table
+                      class="speakersection"
+                      cellspacing="0"
+                      cellpadding="0"
+                      align="center"
+                      style="width:90%;"
+                    >
+                      <tr>
+                        <td>
+                          <table>
+                            <tr>
+                              <td>
+                                <h2 style="text-align: center">
+                                  Session Topic
+                                </h2>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="speaker">
+                                  <div class="image" style="text-align:center">
+                                    <img
+                                      src="https://unsplash.it/250"
+                                      alt="speaker_name"
+                                      width="auto"
+                                      style="border-radius: 50%"
+                                    />
+                                    <h3>Speaker Name</h3>
+                                    <ul style="list-style:none;">
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
+                                            alt="Meetup"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a href="https://gcdcindore.dev"
+                                          ><img
+                                            src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png"
+                                            alt="GcdcIndore"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://www.facebook.com/gcdcindore/"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+                                            alt="Facebook"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="session">
+                                    <h3>Key-points</h3>
+                                    <ul>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="implinks">
+                                  <a href="">Link 1</a>
+                                  <a href=""> Link 2</a>
+                                  <a href=""> Link 3</a>
+                                </div>
+                                <div class="slide"><a href="">Slide</a></div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+                    <table
+                      class="speakersection"
+                      cellspacing="0"
+                      cellpadding="0"
+                      align="center"
+                      style="width:90%;"
+                    >
+                      <tr>
+                        <td>
+                          <table>
+                            <tr>
+                              <td>
+                                <h2 style="text-align: center">
+                                  Session Topic
+                                </h2>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="speaker">
+                                  <div class="image" style="text-align:center">
+                                    <img
+                                      src="https://unsplash.it/250"
+                                      alt="speaker_name"
+                                      width="auto"
+                                      style="border-radius: 50%"
+                                    />
+                                    <h3>Speaker Name</h3>
+                                    <ul style="list-style:none;">
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
+                                            alt="Meetup"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a href="https://gcdcindore.dev"
+                                          ><img
+                                            src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png"
+                                            alt="GcdcIndore"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://www.facebook.com/gcdcindore/"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+                                            alt="Facebook"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="session">
+                                    <h3>Key-points</h3>
+                                    <ul>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="implinks">
+                                  <a href="">Link 1</a>
+                                  <a href=""> Link 2</a>
+                                  <a href=""> Link 3</a>
+                                </div>
+                                <div class="slide"><a href="">Slide</a></div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+                    <table
+                      class="speakersection"
+                      cellspacing="0"
+                      cellpadding="0"
+                      align="center"
+                      style="width:90%;"
+                    >
+                      <tr>
+                        <td>
+                          <table>
+                            <tr>
+                              <td>
+                                <h2 style="text-align: center">
+                                  Session Topic
+                                </h2>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="speaker">
+                                  <div class="image" style="text-align:center">
+                                    <img
+                                      src="https://unsplash.it/250"
+                                      alt="speaker_name"
+                                      width="auto"
+                                      style="border-radius: 50%"
+                                    />
+                                    <h3>Speaker Name</h3>
+                                    <ul style="list-style:none;">
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
+                                            alt="Meetup"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a href="https://gcdcindore.dev"
+                                          ><img
+                                            src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png"
+                                            alt="GcdcIndore"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://www.facebook.com/gcdcindore/"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+                                            alt="Facebook"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="session">
+                                    <h3>Key-points</h3>
+                                    <ul>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="implinks">
+                                  <a href="">Link 1</a>
+                                  <a href=""> Link 2</a>
+                                  <a href=""> Link 3</a>
+                                </div>
+                                <div class="slide"><a href="">Slide</a></div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+                    <table
+                      class="speakersection"
+                      cellspacing="0"
+                      cellpadding="0"
+                      align="center"
+                      style="width:90%;"
+                    >
+                      <tr>
+                        <td>
+                          <table>
+                            <tr>
+                              <td>
+                                <h2 style="text-align: center">
+                                  Session Topic
+                                </h2>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="speaker">
+                                  <div class="image" style="text-align:center">
+                                    <img
+                                      src="https://unsplash.it/250"
+                                      alt="speaker_name"
+                                      width="auto"
+                                      style="border-radius: 50%"
+                                    />
+                                    <h3>Speaker Name</h3>
+                                    <ul style="list-style:none;">
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
+                                            alt="Meetup"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a href="https://gcdcindore.dev"
+                                          ><img
+                                            src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png"
+                                            alt="GcdcIndore"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://www.facebook.com/gcdcindore/"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+                                            alt="Facebook"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="session">
+                                    <h3>Key-points</h3>
+                                    <ul>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                      <li>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officia, qui?
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="implinks">
+                                  <a href="">Link 1</a>
+                                  <a href=""> Link 2</a>
+                                  <a href=""> Link 3</a>
+                                </div>
+                                <div class="slide"><a href="">Slide</a></div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+                    <table class="footer" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <center>
+                            <p
+                              style="display:inline-block; float: left;text-align: justify"
+                              id="social"
+                            >
+                              Your feedback about the event:
+                            </p>
+                            <a
+                              href="https://forms.gle/xM79EQ3CXKztH4xy7"
+                              target="_blank"
+                            >
+                              <ul
+                                id="ratestar"
+                                style="list-style: none; float:left; display:inline-block; width:25%; text-align: center"
+                              >
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                              </ul>
+                            </a>
+                            <div
+                              style="text-align: center;display: inline-block; float: right; width: 40%"
+                              id="social-icons"
+                            >
+                              <ul id="icons-list" style="list-style:none; ">
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
+                                      alt="Meetup"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a href="https://gcdcindore.dev"
+                                    ><img
+                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png"
+                                      alt="GcdcIndore"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a href="https://www.facebook.com/gcdcindore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+                                      alt="Facebook"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a href="https://twitter.com/gcdcIndore"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
+                                      alt="Twitter"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.instagram.com/gcdcindore/"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png"
+                                      alt="Instagram"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.linkedin.com/in/google-cloud-developers-community-indore-984651172"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
+                                      alt="Linkedin"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            id="footer-logo"
+                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/56c69e09-d66d-41dd-b575-fc940cb278eb.png"
+                            alt="GCDC Logo"
+                            width="100%"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="display:inline-block" id="gcdclink">
+                            You are recieving this mail because you are a member
+                            of
+                            <a
+                              href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                              target="_blank"
+                              >GCDC Indore</a
+                            >
+                          </p>
+                          <p
+                            style="display:inline-block; text-align: right; float:right"
+                            id="policy"
+                          >
+                            <a style="color:gray" href="#" target="_blank"
+                              >Privacy Policy</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
