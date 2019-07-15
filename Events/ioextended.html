@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Next Extended'19</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Google+Sans:400,500%7C"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        line-height: 1.4;
+        padding: 0.2em 0;
+      }
+      body {
+        background: white;
+        font-family: 'Google Sans', 'Open Sans', 'sans-serif';
+      }
+      table {
+        border-collapse: collapse;
+        padding: 0;
+      }
+      .container-table {
+        background: white;
+        padding: 0 2px;
+      }
+
+      .image,
+      .session {
+        display: inline-block;
+        text-align: justify;
+      }
+      .session {
+        width: 50%;
+        float: right;
+      }
+
+      .image {
+        float: left;
+        width: 40%;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #2cf;
+        text-align: right;
+        width: 100%;
+      }
+      .implinks {
+        display: inline-block;
+        float: left;
+        width: 70%;
+      }
+      .slide {
+        display: inline-block;
+        float: left;
+      }
+      .implinks a {
+        width: 20%;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        margin: 5px 25px;
+        background: #2cf;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.4);
+      }
+      .slide a {
+        text-decoration: none;
+        padding: 5px 25px;
+        background: #f5b818;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.4);
+      }
+      hr {
+        line-height: 0;
+        padding: 0;
+        font-weight: bold;
+      }
+      .topics {
+        margin: 0 auto;
+      }
+      .news {
+        text-align: center;
+      }
+      .news li {
+        line-height: 1.8em;
+        text-align: left;
+      }
+      .news-title {
+        text-align: left;
+      }
+
+      .icons-list li {
+        margin: 0 20px 0 0;
+      }
+
+      @media screen and (max-width: 1080px) {
+        .container-table {
+          width: 80% !important;
+        }
+        .session {
+          margin: 0;
+        }
+        #viewinbrowser,
+        #gcdclink {
+          float: none !important;
+          display: block !important;
+          text-align: center !important;
+          font-size: 0.8em !important;
+        }
+      }
+      @media screen and (max-width: 810px) and (min-width: 678px) {
+        .container-table {
+          width: 95% !important;
+        }
+      }
+
+      @media screen and (max-width: 678px) {
+        * {
+          /* font-size: 0.9rem; */
+        }
+        .container-table {
+          width: 100% !important;
+        }
+        #header-logo {
+          width: 95% !important;
+          height: auto !important;
+        }
+        #footer-logo {
+          width: 90% !important;
+          height: auto !important;
+        }
+        #policy,
+        #gcdclink {
+          float: none !important;
+          display: block !important;
+          text-align: center !important;
+          font-size: 0.8em !important;
+        }
+        #policy a,
+        #gcdclink a {
+          font-size: 0.85em;
+        }
+        .eventpara{
+          text-align: left !important;
+        }
+        .image,
+        .session {
+          display: block !important;
+          text-align: center !important;
+          float: none !important;
+          width: 100% !important;
+        }
+        .session {
+          text-align: left !important;
+          margin: 0 auto;
+          width: 80% !important;
+        }
+        .implinks,
+        .slide {
+          display: block !important;
+          float: none !important;
+          width: 80% !important;
+          margin: 0 auto !important;
+        }
+        .implinks a {
+          margin: 5px 0 !important;
+          width: 32% !important;
+        }
+        .slide {
+          width: 60% !important;
+        }
+        .slide a {
+          padding: 5px 0 !important;
+        }
+        .news {
+          font-size: 1em;
+          text-align: center !important;
+          max-width: 90% !important;
+          padding: 0 10px !important;
+        }
+        .topics {
+          text-align: center !important;
+        }
+        #social-icons {
+          display: block !important;
+          float: none !important;
+          text-align: center !important;
+          width: 100% !important;
+        }
+        #social,
+        #ratestar {
+          line-height: 1em;
+          display: inline-block !important;
+          float: none !important;
+          width: 25% !important;
+          font-size: 1em;
+        }
+        #ratestar * {
+          padding: 0 !important;
+        }
+
+        #icons-list li {
+          margin: 0 1em 0 0 !important;
+        }
+      }
+      @media screen and (max-width: 485px) {
+        #social {
+          font-size: 0.8em !important;
+          text-align: left !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      class="outer-table"
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      style="padding:0 0.2em;"
+    >
+      <tbody>
+        <tr>
+          <td>
+            <center>
+              <table
+                class="container-table"
+                width="60%"
+                cellspacing="0"
+                cellpadding="0"
+              >
+                <tr>
+                  <td>
+                    <!-- Header -->
+                    <table class="header" cellspacing="0" cellpadding="0">
+                      <!-- Pre-header -->
+
+                      <!-- Header Image -->
+                      <tr>
+                        <td style="background:#ecedf1;text-align: center">
+                          <a href="https://gcdcindore.dev">
+                            <img
+                              id="header-logo"
+                              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a5d79f5c-edc8-42a2-9b23-d14c4f84c4f9.png"
+                              alt="GCDC Logo"
+                              width="95%"
+                              style="padding: 10px;"
+                          /></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="display:inline-block;width:49%" id="date">
+                            <strong>June, 2019</strong>
+                          </p>
+                          <p
+                            style="display:inline-block;width:49%; text-align: right"
+                            id="event"
+                          >
+                            <strong>I/O Extended '19</strong>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+
+                    <table
+                      class="eventdescription"
+                      cellspacing="0"
+                      cellpadding="0"
+                      align="center"
+                      width="90%"
+                    >
+                      <tr>
+                        <td>
+                          <h3 style="text-align: center;">Event Description</h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="eventpara" style="text-align: justify;">
+                            <b>Google I/O'19</b> 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus tempora molestias, quas aperiam ullam, quod temporibus architecto id explicabo provident. Fuga iste unde quidem, necessitatibus quos adipisci. Debitis, dicta.
+                            For more information, contact us @
+                            <a href="mailto:gcdcindore@gmail.com"
+                              >gcdc.indore@gmail.com</a
+                            >
+                            <br />
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+
+                    <table
+                      class="speakersection"
+                      cellspacing="0"
+                      cellpadding="0"
+                      align="center"
+                      style="width:90%;"
+                    >
+                      <tr>
+                        <td>
+                          <table>
+                            <tr>
+                              <td>
+                                <h2 style="text-align: center">
+                                  TensorFlow
+                                </h2>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="speaker">
+                                  <div class="image" style="text-align:center">
+                                    <img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/1545694f-8d97-4744-8334-5ee3cf9f084e.jpg"
+                                      alt="speaker_name"
+                                      width="250px"
+                                      style="border-radius: 50%"
+                                    />
+                                    <h3>Sandeep Gupta</h3>
+                                    <ul style="list-style:none;">
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://twitter.com/thesandeepgupta"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
+                                            alt="Twitter"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                      
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://www.linkedin.com/in/sandeep-gupta-a71a343/"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
+                                            alt="Linkedin"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="session">
+                                    <h3>Key-points</h3>
+                                    <ul>
+                                      <li>
+                                        TensorFlow is an end-to-end open source platform for machine learning.
+                                      </li>
+                                      <li>
+                                        It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML powered applications.
+                                      </li>
+                                      <li>
+                                        Tensorflow is <b>easy</b> (Simplified APIs), <b>powerful</b> (flexibility and performance) and <b>scalable</b> (Deploy everywhere).
+                                      </li>
+                                      <li>
+                                        Tensorflow's name is directly derived from its core framework: Tensor. In Tensorflow, all the computations involve tensors which are vectors or matrices of n-dimensions that represents all types of data.
+                                      </li>
+                                      <li>
+                                        The accessibility of Tensorflow for each and every one and it’s incorporation of APIs to make a scalable deep learning architecture bring it into popular demand.
+
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="implinks">
+                                  <a
+                                    href="https://codelabs.developers.google.com/?cat=TensorFlow"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Link 1</a
+                                  >
+                                  <a
+                                    href="https://coursera.org/learn/introduction-tensorflow"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Link 2</a
+                                  >
+                                  <a
+                                    href="https://github.com/orgs/tensorflow/projects/4"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Link 3</a
+                                  >
+                                </div>
+                                <div class="slide">
+                                  <a
+                                    href="https://drive.google.com/file/d/10eUcETzYTWSdKB3arpJfbEt56jatjCi3/view?usp=sharing"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Slide</a
+                                  >
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+                    <table
+                      class="speakersection"
+                      cellspacing="0"
+                      cellpadding="0"
+                      align="center"
+                      style="width:90%;"
+                    >
+                      <tr>
+                        <td>
+                          <table>
+                            <tr>
+                              <td>
+                                <h2 style="text-align: center">
+                                  Kotlin for Java Devs
+                                </h2>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="speaker">
+                                  <div class="image" style="text-align:center">
+                                    <img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/e7734dac-676d-4ed0-ab65-135d28e92830.jpg"
+                                      alt="speaker_name"
+                                      width="250px"
+                                      style="border-radius: 50%"
+                                    />
+                                    <h3>Pradhan Yash Sharma</h3>
+                                    <ul style="list-style:none;">
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://twitter.com/pradhanyashsha1"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
+                                            alt="Twitter"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://www.facebook.com/pradhanyashsharma/"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+                                            alt="Facebook"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                      <li
+                                        style="display: inline; padding: 0 5px;"
+                                      >
+                                        <a
+                                          href="https://www.linkedin.com/in/pradhanyashsharma"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          ><img
+                                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
+                                            alt="Linkedin"
+                                            width="6%"
+                                        /></a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="session">
+                                    <h3>Key-points</h3>
+                                    <ul>
+                                      <li>
+                                        Kotlin is a general purpose, open source, statically typed “pragmatic” programming language for the JVM and Android that combines object-oriented and functional programming features.
+                                      </li>
+                                      <li>
+                                        A better Java for the JVM which explicitly provides null safety and supports immutability. Reduction of boiler plate code is the huge triumph of Kotlin for all the Android developers.
+                                      </li>
+                                      <li>
+                                        Gradually shift from the language you code in to Kotlin with the help of enormous features provided in Kotlin.
+                                      </li>
+                                      <li>
+                                        Fortunately, if you are new to language and don’t know how to convert your Java code into  Kotlin, Java to Kotlin convertor is at your rescue.
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="implinks">
+                                  <a
+                                    href="https://kubernetes.io/docs/home/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Link 1</a
+                                  >
+                                  <a
+                                    href="https://aihub.cloud.google.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Link 2</a
+                                  >
+                                  <a
+                                    href="https://www.qwiklabs.com/quests/45"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Link 3</a
+                                  >
+                                </div>
+                                <div class="slide">
+                                  <a
+                                    href="https://docs.google.com/presentation/d/1OX4BzFYe1H5HS4B1F5R7lICNr2GUmemt9WWt0qe-RlQ/edit?usp=sharing"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Slide</a
+                                  >
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <hr />
+                    
+                    <table class="topics" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <center>
+                            <div class="news">
+                              <h3 class="news-title">Kotlin Hackathon Participants: </h3>
+                              <ul class="news-list">
+                                <li>
+                                  <a
+                                    href="https://github.com/codeIndore/io-extended-19-proton-s"
+                                    target="_blank"
+                                    >Team Proton S</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://github.com/codeIndore/io-extended-19-deveshs"
+                                    target="_blank"
+                                    >Team Deveshs</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://github.com/codeIndore/io-extended-19-the-gamer"
+                                    target="_blank"
+                                    >Team The Gamer</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                  href="https://github.com/codeIndore/io-extended-19-error404"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  >Error 404</a
+                                > <span style="opacity: 0">fhdfsdfhsdbfhs dfds fsddbfh dfhsdbfhsdb dbfhsdbfhbsd dfbhdsbfdshbf bsdhfbsdhb</span>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://github.com/codeIndore/io-extended-19-blueprint"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Team BluePrint</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://github.com/codeIndore/io-extended-19-apextechnos"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Team Apex Technos</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://github.com/codeIndore/io-extended-19-meandthebois"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Team Me and the Bois</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://github.com/codeIndore/io-extended-19-we2"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Team We 2</a
+                                  >
+                                </li>
+                                
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                      
+                    </table>
+
+                    <hr>
+                    
+
+                    <table class="footer" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <center>
+                            <p
+                              style="display:inline-block; float: left;text-align: justify"
+                              id="social"
+                            >
+                              Your feedback about the event:
+                            </p>
+                            <a
+                              href="https://forms.gle/xM79EQ3CXKztH4xy7"
+                              target="_blank"
+                            >
+                              <ul
+                                id="ratestar"
+                                style="list-style: none; float:left; display:inline-block; width:25%; text-align: center"
+                              >
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                                <li style="display:inline; ">
+                                  <img
+                                    src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
+                                    alt=""
+                                    width="8%"
+                                  />
+                                </li>
+                              </ul>
+                            </a>
+                            <div
+                              style="text-align: center;display: inline-block; float: right; width: 40%"
+                              id="social-icons"
+                            >
+                              <ul id="icons-list" style="list-style:none; ">
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
+                                      alt="Meetup"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://gcdcindore.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                      src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png"
+                                      alt="GcdcIndore"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.facebook.com/gdgcindore/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+                                      alt="Facebook"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://twitter.com/gdgcloudindore"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
+                                      alt="Twitter"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.instagram.com/gdgcloudindore/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png"
+                                      alt="Instagram"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.linkedin.com/in/google-cloud-developers-community-indore-984651172"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
+                                      alt="Linkedin"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            id="footer-logo"
+                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a5d79f5c-edc8-42a2-9b23-d14c4f84c4f9.png"
+                            alt="GDG Cloud Logo"
+                            width="100%"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="display:inline-block" id="gcdclink">
+                            You are recieving this mail because you are a member
+                            of
+                            <a
+                              href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                              target="_blank"
+                              >GDG Cloud Indore</a
+                            >
+                          </p>
+                          <p
+                            style="display:inline-block; text-align: right; float:right"
+                            id="policy"
+                          >
+                            <a style="color:gray" href="#" target="_blank"
+                              >Privacy Policy</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
