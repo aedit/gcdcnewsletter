@@ -1,189 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Google+Sans:400,500%7C"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500%7C" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>GCDC Indore Newsletter</title>
-  </head>
-  <style>
+</head>
+<style>
     * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
+    
     .outer-wrapper {
-      background: lightgray;
-      height: 100vh;
-      font-family: 'Google Sans', 'sans-serif';
+        background: lightgray;
+        height: 100vh;
+        font-family: 'Google Sans', 'sans-serif';
     }
+    
     .inner-wrapper {
-      background: white;
-      margin: 0 auto;
-      width: 760px;
-      height: 100vh;
-      padding: 20px;
+        background: white;
+        margin: 0 auto;
+        width: 760px;
+        height: 100vh;
+        padding: 20px;
     }
+    
     .header {
-      background: whitesmoke;
-      display: flex;
-      height: 80px;
+        background: whitesmoke;
+        display: flex;
+        height: 80px;
     }
+    
     .header * {
-      flex: 1;
+        flex: 1;
     }
-    .header > h2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: right;
+    
+    .header>h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
     }
+    
     .template,
     .tempbuilder {
-      text-align: center;
-      margin: 0.8em 0.2em;
+        text-align: center;
+        margin: 0.8em 0.2em;
     }
+    
     .container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      width: 90%;
-      margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
     }
-    .container > h2 {
-      flex: 1 1 100%;
-      padding: 0.6em 0;
-      text-align: center;
+    
+    .container>h2 {
+        flex: 1 1 100%;
+        padding: 0.6em 0;
+        text-align: center;
     }
+    
     .promotions {
-      text-align: right;
-      flex: 1;
+        text-align: right;
+        flex: 1;
     }
+    
     .newsletter {
-      flex: 1;
+        flex: 1;
     }
-    .promotions > ul {
-      direction: rtl;
+    
+    .promotions>ul {
+        direction: rtl;
     }
+    
     a {
-      text-decoration: none;
-      padding: 0.1em 0.2em;
-      background: rgba(34, 204, 255, 0.6);
-      color: black;
+        text-decoration: none;
+        padding: 0.1em 0.2em;
+        background: rgba(34, 204, 255, 0.6);
+        color: black;
     }
+    
     ul {
-      padding: 5px;
+        padding: 5px;
     }
+    
     ul li {
-      margin-bottom: 0.4em;
+        margin-bottom: 0.4em;
     }
+    
     .social-icons {
-      margin: 2em;
-      padding: 0.4em;
-      display: flex;
-      justify-content: space-evenly;
-      background: whitesmoke;
+        margin: 2em;
+        padding: 0.4em;
+        display: flex;
+        justify-content: space-evenly;
+        background: whitesmoke;
     }
+    
     .social-icons img {
-      width: 40px;
+        width: 40px;
     }
+    
     .social-icons a {
-      text-decoration: none;
-      background: none;
+        text-decoration: none;
+        background: none;
     }
+    
     .tooltiptext {
-      visibility: hidden;
-      position: absolute;
-      z-index: 10;
-      width: 200px;
-      background-color: black;
-      border-radius: 10px;
-      padding: 5px 0;
-      text-align: center;
-      color: #fff;
-      margin-top: 20px;
+        visibility: hidden;
+        position: absolute;
+        z-index: 10;
+        width: 200px;
+        background-color: black;
+        border-radius: 10px;
+        padding: 5px 0;
+        text-align: center;
+        color: #fff;
+        margin-top: 20px;
     }
+    
     .tooltip:hover .tooltiptext,
     .tempbuilder:hover .tempbuildertooltip {
-      animation: popdown 1.5s ease-out;
+        animation: popdown 1.5s ease-out;
     }
+    
     .tempbuildertooltip {
-      visibility: hidden;
-      position: absolute;
-      z-index: 10;
-      width: 200px;
-      background-color: black;
-      border-radius: 10px;
-      padding: 5px 0;
-      text-align: center;
-      color: #fff;
-      margin-top: 20px;
-      margin: 20px auto;
-      left: 40%;
+        visibility: hidden;
+        position: absolute;
+        z-index: 10;
+        width: 200px;
+        background-color: black;
+        border-radius: 10px;
+        padding: 5px 0;
+        text-align: center;
+        color: #fff;
+        margin-top: 20px;
+        margin: 20px auto;
+        left: 40%;
     }
+    
     .tempbuilder {
-      cursor: pointer;
+        cursor: pointer;
     }
-
+    
     @keyframes popdown {
-      from {
-        visibility: visible;
-      }
-      50% {
-        opacity: 0.5;
-      }
-      to {
-        opacity: 0;
-      }
+        from {
+            visibility: visible;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        to {
+            opacity: 0;
+        }
     }
+    
     @media screen and (max-width: 480px) {
-      .outer-wrapper {
-        width: 100%;
-        font-size: 0.8em;
-      }
-      .inner-wrapper {
-        width: 100%;
-      }
+        .outer-wrapper {
+            width: 100%;
+            font-size: 0.8em;
+        }
+        .inner-wrapper {
+            width: 100%;
+        }
     }
-  </style>
-  <body>
+</style>
+
+<body>
     <div class="outer-wrapper">
-      <div class="inner-wrapper">
-        <div class="header">
-          <img src="images/google-cloud.svg" alt="Google Cloud" width="50%" />
-          <h2>
-            GCDC Indore's<br />
-            Newsletter Github Page
-          </h2>
-        </div>
-        <div class="template">
-          Check out our template <a href="./template.html">here</a>.
-        </div>
-        <div class="tempbuilder">
-          Customize the newsletter by the template
-          <a href="./Builder/tempbuilder.html">here</a>.
-          <span class="tempbuildertooltip"> OUT NOW</span>
-        </div>
-        <div class="container">
-          <h2>Archives</h2>
-          <div class="newsletter">
-            <h3>Find our Newsletters here</h3>
-            <ul>
-              <li><a href="Newsletters/may2019.html">May 2019</a></li>
-              <li>
-                <a href="Newsletters/june2019.html">June 2019</a>
-              </li>
-              <li>
-                <a href="Newsletters/july2019.html">July 2019</a>
-              </li>
-              <li>
-                <a class="tooltip" href="Newsletters/aug2019.html"
-                  >August
+        <div class="inner-wrapper">
+            <div class="header">
+                <img src="images/google-cloud.svg" alt="Google Cloud" width="50%" />
+                <h2>
+                    GCDC Indore's<br /> Newsletter Github Page
+                </h2>
+            </div>
+            <div class="template">
+                Check out our template <a href="./template.html">here</a>.
+            </div>
+            <div class="tempbuilder">
+                Customize the newsletter by the template
+                <a href="./Builder/tempbuilder.html">here</a>.
+                <span class="tempbuildertooltip"> OUT NOW</span>
+            </div>
+            <div class="container">
+                <h2>Archives</h2>
+                <div class="newsletter">
+                    <h3>Find our Newsletters here</h3>
+                    <ul>
+                        <li><a href="Newsletters/may2019.html">May 2019</a></li>
+                        <li>
+                            <a href="Newsletters/june2019.html">June 2019</a>
+                        </li>
+                        <li>
+                            <a href="Newsletters/july2019.html">July 2019</a>
+                        </li>
+                        <li>
+                            <a class="tooltip" href="Newsletters/aug2019.html">August
                   2019</a
                 >
               </li>
@@ -193,14 +212,15 @@
                   2019</a
                 >
               </li>
-            </ul>
-          </div>
-          <div class="promotions">
-            <h3>Find our Events here</h3>
-            <ul>
-              <li>
-                <a class="tooltip" href="./Events/nextextended.html"
-                  >Cloud Next Extended '19</a
+              <li><a href="Newsletters/may2020.html">May 2020</a></li>
+
+                    </ul>
+                </div>
+                <div class="promotions">
+                    <h3>Find our Events here</h3>
+                    <ul>
+                        <li>
+                            <a class="tooltip" href="./Events/nextextended.html">Cloud Next Extended '19</a
                 >
               </li>
               <li>
@@ -226,6 +246,12 @@
                   2019</a
                 >
               </li>
+              <li>
+                <a class="tooltip" href=""
+                  ><span class="tooltiptext">Content Unavailable</span>May 2020
+                  </a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -236,38 +262,17 @@
               alt="Facebook"
           /></a>
 
-          <a href="https://twitter.com/gcdcIndore"
-            ><img
-              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
-              alt="Twitter"
-          /></a>
+                            <a href="https://twitter.com/gcdcIndore"><img src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png" alt="Twitter" /></a>
 
-          <a href="https://www.instagram.com/gcdcindore/"
-            ><img
-              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png"
-              alt="Instagram"
-          /></a>
-          <a href="https://gcdcindore.dev"
-            ><img
-              src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png"
-              alt="GcdcIndore"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/google-cloud-developers-community-indore-984651172"
-            ><img
-              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
-              alt="Linkedin"
-          /></a>
+                            <a href="https://www.instagram.com/gcdcindore/"><img src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png" alt="Instagram" /></a>
+                            <a href="https://gcdcindore.dev"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png" alt="GcdcIndore" /></a>
+                            <a href="https://www.linkedin.com/in/google-cloud-developers-community-indore-984651172"><img src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png" alt="Linkedin" /></a>
 
-          <a
-            href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
-            ><img
-              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
-              alt="Meetup"
-          /></a>
+                            <a href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"><img src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png" alt="Meetup" /></a>
+                </div>
+                <hr />
+            </div>
         </div>
-        <hr />
-      </div>
-    </div>
-  </body>
+</body>
+
 </html>
