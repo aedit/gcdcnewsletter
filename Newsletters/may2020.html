@@ -1,398 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>GCDC Indore May 2020 Newsletter</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500%7C" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Google+Sans:400,500%7C"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
     <style>
-        * {
-            line-height: 1.4;
-            padding: 0.2em 0;
-        }
-        
-        body {
-            background: white;
-            font-family: 'Google Sans', 'Open Sans', 'sans-serif';
-        }
-        
-        table {
-            border-collapse: collapse;
-            padding: 0;
-        }
-        
+      * {
+        line-height: 1.4;
+        padding: 0.2em 0;
+      }
+
+      body {
+        background: white;
+        font-family: "Google Sans", "Open Sans", "sans-serif";
+      }
+
+      table {
+        border-collapse: collapse;
+        padding: 0;
+      }
+
+      .container-table {
+        background: white;
+        padding: 0 2px;
+      }
+
+      .blog-container {
+        margin: 20px;
+      }
+
+      .blog-title {
+        text-align: left;
+        margin: 5px;
+      }
+
+      .blog-image,
+      .blog-content {
+        display: inline-block;
+        float: left;
+        text-align: center;
+      }
+
+      .blog-content {
+        width: 60%;
+      }
+
+      .blog-image {
+        width: 40%;
+      }
+
+      .blog-description {
+        text-align: justify;
+      }
+
+      .blog-link {
+        background: rgb(0, 133, 255);
+        color: #ffffff;
+        padding: 5px 10px;
+        float: right;
+        width: auto;
+        border-radius: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #2cf;
+        text-align: right;
+        width: 100%;
+      }
+
+      hr {
+        line-height: 0;
+        padding: 0;
+        font-weight: bold;
+      }
+
+      .topics {
+        margin: 0 auto;
+      }
+
+      .news {
+        text-align: center;
+      }
+
+      .news li {
+        line-height: 1.8em;
+        text-align: left;
+      }
+
+      .news-title {
+        text-align: left;
+      }
+
+      .icons-list li {
+        margin: 0 20px 0 0;
+      }
+
+      @media screen and (max-width: 1080px) {
         .container-table {
-            background: white;
-            padding: 0 2px;
+          width: 80% !important;
         }
-        
-        .blog-container {
-            margin: 20px;
+        #viewinbrowser,
+        #gcdclink {
+          float: none !important;
+          display: block !important;
+          text-align: center !important;
+          font-size: 0.8em !important;
         }
-        
-        .blog-title {
-            text-align: left;
-            margin: 5px;
+      }
+
+      @media screen and (max-width: 810px) and (min-width: 678px) {
+        .container-table {
+          width: 95% !important;
         }
-        
+      }
+
+      @media screen and (max-width: 678px) {
+        * {
+          font-size: 0.9rem;
+        }
+        .container-table {
+          width: 100% !important;
+        }
+        #header-logo,
+        #footer-logo {
+          width: auto !important;
+          height: auto !important;
+          width: 100% !important;
+        }
+        #policy,
+        #gcdclink {
+          float: none !important;
+          display: block !important;
+          text-align: center !important;
+          font-size: 0.8em !important;
+        }
+        #policy a,
+        #gcdclink a {
+          font-size: 0.85em;
+        }
+        .blogs {
+          width: 80% !important;
+          margin: 0 auto !important;
+        }
         .blog-image,
         .blog-content {
-            display: inline-block;
-            float: left;
-            text-align: center;
+          display: block !important;
+          text-align: center !important;
+          float: none !important;
+          width: 100% !important;
         }
-        
-        .blog-content {
-            width: 60%;
-        }
-        
-        .blog-image {
-            width: 40%;
-        }
-        
-        .blog-description {
-            text-align: justify;
-        }
-        
         .blog-link {
-            background: rgb(0, 133, 255);
-            color: #ffffff;
-            padding: 5px 10px;
-            float: right;
-            width: auto;
-            border-radius: 5px;
+          width: auto !important;
+          float: none !important;
         }
-        
-        a {
-            text-decoration: none;
-            font-weight: 500;
-            color: #2cf;
-            text-align: right;
-            width: 100%;
-        }
-        
-        hr {
-            line-height: 0;
-            padding: 0;
-            font-weight: bold;
-        }
-        
-        .topics {
-            margin: 0 auto;
-        }
-        
         .news {
-            text-align: center;
+          font-size: 1em;
+          text-align: center !important;
+          max-width: 90% !important;
+          padding: 0 10px !important;
         }
-        
-        .news li {
-            line-height: 1.8em;
-            text-align: left;
+        .topics {
+          text-align: center !important;
         }
-        
-        .news-title {
-            text-align: left;
+        #social-icons {
+          display: block !important;
+          float: none !important;
+          text-align: center !important;
+          width: 100% !important;
         }
-        
-        .icons-list li {
-            margin: 0 20px 0 0;
+        #social,
+        #ratestar {
+          line-height: 1em;
+          display: inline-block !important;
+          float: none !important;
+          width: 25% !important;
+          font-size: 1em;
         }
-        
-        @media screen and (max-width: 1080px) {
-            .container-table {
-                width: 80% !important;
-            }
-            #viewinbrowser,
-            #gcdclink {
-                float: none !important;
-                display: block !important;
-                text-align: center !important;
-                font-size: 0.8em !important;
-            }
+        #ratestar * {
+          padding: 0 !important;
         }
-        
-        @media screen and (max-width: 810px) and (min-width: 678px) {
-            .container-table {
-                width: 95% !important;
-            }
+        #icons-list li {
+          margin: 0 1em 0 0 !important;
         }
-        
-        @media screen and (max-width: 678px) {
-            * {
-                font-size: 0.9rem;
-            }
-            .container-table {
-                width: 100% !important;
-            }
-            #header-logo,
-            #footer-logo {
-                width: auto !important;
-                height: auto !important;
-                width: 100% !important;
-            }
-            #policy,
-            #gcdclink {
-                float: none !important;
-                display: block !important;
-                text-align: center !important;
-                font-size: 0.8em !important;
-            }
-            #policy a,
-            #gcdclink a {
-                font-size: 0.85em;
-            }
-            .blogs {
-                width: 80% !important;
-                margin: 0 auto !important;
-            }
-            .blog-image,
-            .blog-content {
-                display: block !important;
-                text-align: center !important;
-                float: none !important;
-                width: 100% !important;
-            }
-            .blog-link {
-                width: auto !important;
-                float: none !important;
-            }
-            .news {
-                font-size: 1em;
-                text-align: center !important;
-                max-width: 90% !important;
-                padding: 0 10px !important;
-            }
-            .topics {
-                text-align: center !important;
-            }
-            #social-icons {
-                display: block !important;
-                float: none !important;
-                text-align: center !important;
-                width: 100% !important;
-            }
-            #social,
-            #ratestar {
-                line-height: 1em;
-                display: inline-block !important;
-                float: none !important;
-                width: 25% !important;
-                font-size: 1em;
-            }
-            #ratestar * {
-                padding: 0 !important;
-            }
-            #icons-list li {
-                margin: 0 1em 0 0 !important;
-            }
+      }
+
+      @media screen and (max-width: 485px) {
+        #social {
+          font-size: 0.8em !important;
+          text-align: left !important;
         }
-        
-        @media screen and (max-width: 485px) {
-            #social {
-                font-size: 0.8em !important;
-                text-align: left !important;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <table class="outer-table" width="100%" cellspacing="0" cellpadding="0" style="padding:0 0.2em;">
-        <tbody>
-            <tr>
-                <td>
-                    <center>
-                        <table class="container-table" width="60%" cellspacing="0" cellpadding="0">
-                            <tr>
-                                <td>
-                                    <!-- Header -->
-                                    <table class="header" cellspacing="0" cellpadding="0">
-                                        <!-- Pre-header -->
+  <body>
+    <table
+      class="outer-table"
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      style="padding: 0 0.2em;"
+    >
+      <tbody>
+        <tr>
+          <td>
+            <center>
+              <table
+                class="container-table"
+                width="60%"
+                cellspacing="0"
+                cellpadding="0"
+              >
+                <tr>
+                  <td>
+                    <!-- Header -->
+                    <table class="header" cellspacing="0" cellpadding="0">
+                      <!-- Pre-header -->
 
-                                        <!-- Header Image -->
-                                        <tr>
-                                            <td>
-                                                <a href="https://gcdcindore.dev">
-                                                    <img id="header-logo" src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a5d79f5c-edc8-42a2-9b23-d14c4f84c4f9.png" alt="GDG Cloud Logo" width="100%" /></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p style="display:block; text-align: center" id="date">
-                                                    <strong>May, 2020</strong>
-                                                </p>
-                                            </td>
-                                        </tr>
-                                    </table>
+                      <!-- Header Image -->
+                      <tr>
+                        <td>
+                          <a href="https://gcdcindore.dev">
+                            <img
+                              id="header-logo"
+                              src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a5d79f5c-edc8-42a2-9b23-d14c4f84c4f9.png"
+                              alt="GDG Cloud Logo"
+                              width="100%"
+                          /></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p
+                            style="display: block; text-align: center;"
+                            id="date"
+                          >
+                            <strong>May, 2020</strong>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
 
-                                    <hr />
-                                    <table class="blogs" cellspacing="0" cellpadding="5" align="center">
-                                        <tr>
-                                            <td class="blog-container">
-                                                <div class="blog-image">
-                                                    <a href="https://cloud.google.com/bigquery/docs/tutorials">
-                                                        <img width="250" height="250" src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/855f3f40-5bfa-4100-bb29-261f659d1d8a.png" alt="Big Query" /></a>
-                                                </div>
-                                                <div class="blog-content">
-                                                    <h3 class="blog-title">Cloud Shell</h3>
-                                                    <p class="blog-description">
-                                                        Cloud Shell provides you with command-line access to your cloud resources directly from your browser. You can easily manage your projects and resources without having to install the Google Cloud SDK or other tools on your system. With Cloud Shell, the
-                                                        Cloud SDK gcloud command-line tool and other utilities you need are always available, up to date, and fully authenticated when you need them.
-                                                    </p>
-                                                    <a class="blog-link" href="https://cloud.google.com/shell">Know More
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
+                    <hr />
+                    <table
+                      class="blogs"
+                      cellspacing="0"
+                      cellpadding="5"
+                      align="center"
+                    >
+                      <tr>
+                        <td class="blog-container">
+                          <div class="blog-image">
+                            <a
+                              href="https://cloud.google.com/shell"
+                            >
+                              <img
+                                width="250"
+                                height="250"
+                                src="https://mcusercontent.com/303ef851a601f593c6d6c14b6/images/967e05f7-70d7-46ba-8f89-0d7a967eecad.png"
+                                alt="Cloud Shell"
+                            /></a>
+                          </div>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Cloud Shell</h3>
+                            <p class="blog-description">
+                              Cloud Shell provides you with command-line access
+                              to your cloud resources directly from your
+                              browser. You can easily manage your projects and
+                              resources without having to install the Google
+                              Cloud SDK or other tools on your system. With
+                              Cloud Shell, the Cloud SDK gcloud command-line
+                              tool and other utilities you need are always
+                              available, up to date, and fully authenticated
+                              when you need them.
+                            </p>
+                            <a
+                              class="blog-link"
+                              href="https://cloud.google.com/shell"
+                              >Know More
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
 
-                                        <tr>
-                                            <td class="blog-container">
-                                                <div class="blog-image">
-                                                    <a href="https://cloud.google.com/sql/docs/"><img width="250" height="250" src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/6131aa2a-f8f8-4cab-971a-274a7866815a.png" alt="Cloud SQL" /></a>
-                                                </div>
-                                                <div class="blog-content">
-                                                    <h3 class="blog-title">Cloud AutoML</h3>
-                                                    <p class="blog-description">
-                                                        Cloud AutoML is a suite of machine learning products that enables developers with limited machine learning expertise to train high-quality models specific to their business needs. It relies on Google’s state-of-the-art transfer learning and neural architecture
-                                                        search technology. </p>
-                                                    <a class="blog-link" href="https://cloud.google.com/automl/docs">Know More
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
+                      <tr>
+                        <td class="blog-container">
+                          <div class="blog-image">
+                            <a href="https://cloud.google.com/automl/docs"
+                              ><img
+                                width="250"
+                                height="250"
+                                src="https://mcusercontent.com/303ef851a601f593c6d6c14b6/images/71fd9132-8884-4c3b-9b45-0850e5c47787.png"
+                                alt="Cloud AutoML"
+                            /></a>
+                          </div>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Cloud AutoML</h3>
+                            <p class="blog-description">
+                              Cloud AutoML is a suite of machine learning
+                              products that enables developers with limited
+                              machine learning expertise to train high-quality
+                              models specific to their business needs. It relies
+                              on Google’s state-of-the-art transfer learning and
+                              neural architecture search technology.
+                            </p>
+                            <a
+                              class="blog-link"
+                              href="https://cloud.google.com/automl/docs"
+                              >Know More
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
 
-                                        <tr>
-                                            <td class="blog-container">
-                                                <div class="blog-image">
-                                                    <a href="https://cloud.google.com/dataproc/docs/"><img width="250" height="250" src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/c12afdda-6125-4fb3-8475-5bce6c67d0d9.png" alt="Cloud Dataproc" /></a>
-                                                </div>
-                                                <div class="blog-content">
-                                                    <h3 class="blog-title">Cloud Speech API</h3>
-                                                    <p class="blog-description">
-                                                        Google Speech-to-Text enables developers to convert audio to text by applying powerful neural network models in an easy-to-use API. The API recognizes more than 120 languages and variants to support your global user base. You can enable voice command-and-control,
-                                                        transcribe audio from call centers, and more. It can process real-time streaming or prerecorded audio, using Google’s machine learning technology. </p>
-                                                    <a class="blog-link" href="https://cloud.google.com/speech-to-text">Know More
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
+                      <tr>
+                        <td class="blog-container">
+                          <div class="blog-image">
+                            <a href="https://cloud.google.com/speech-to-text"
+                              ><img
+                                width="250"
+                                height="250"
+                                src="https://mcusercontent.com/303ef851a601f593c6d6c14b6/images/08744b65-8e2c-40f4-b121-fdff651d970a.png"
+                                alt="Cloud SpeechAPI"
+                            /></a>
+                          </div>
+                          <div class="blog-content">
+                            <h3 class="blog-title">Cloud Speech API</h3>
+                            <p class="blog-description">
+                              Google Speech-to-Text enables developers to
+                              convert audio to text by applying powerful neural
+                              network models in an easy-to-use API. The API
+                              recognizes more than 120 languages and variants to
+                              support your global user base. You can enable
+                              voice command-and-control, transcribe audio from
+                              call centers, and more. It can process real-time
+                              streaming or prerecorded audio, using Google’s
+                              machine learning technology.
+                            </p>
+                            <a
+                              class="blog-link"
+                              href="https://cloud.google.com/speech-to-text"
+                              >Know More
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
 
-                                    </table>
-
-                                    <hr />
-                                    <table class="topics" cellspacing="0" cellpadding="0">
-                                        <tr>
-                                            <td>
-                                                <center>
-                                                    <div class="news">
-                                                        <h3 class="news-title">Useful Links:</h3>
-                                                        <ul class="news-list">
-                                                            <li>
-                                                                <a href="https://medium.com/google-cloud/13-most-common-google-cloud-reference-architectures-23630b46326d" target="_blank">
-                                                                    13 Most Common Google Cloud Reference Architectures
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="https://googleapis.dev/python/speech/latest/index.html" target="_blank">
-                                                                    The Cloud Speech API
-                                                                </a> enables developers to convert audio to text.
-                                                            </li>
-                                                            <li>
-                                                                How to
-                                                                <a href="https://cloud.google.com/blog/products/ai-machine-learning/how-to-quickly-solve-machine-learning-forecasting-problems-using-pandas-and-bigquery" target="_blank">
-                                                                    quickly solve machine learning forecasting problems 
-                                                                </a> using Pandas and BigQuery
-                                                            </li>
-                                                            <li>
-                                                                <a href="https://medium.com/google-cloud/gcp-dashboard-overview-c80ffd0ed521" target="_blank" rel="noopener noreferrer">
-                                                                GCP Dashboard Overview 
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                Say hello to the
-                                                                <a href="https://firebase.googleblog.com/2020/05/local-firebase-emulator-ui.html" target="_blank" rel="noopener noreferrer">
-                                                                    helpful Firebase Emulator</a>- a local first UI to boost your productivity
-                                                            </li>
-                                                            <li>
-                                                                How
-                                                                <a href="https://cloud.google.com/blog/products/ai-machine-learning/using-google-cloud-platform-free-tier-to-scale-out-an-ai-service" target="_blank" rel="noopener noreferrer">
-                                                                Google Cloud helped scaling-out one person's AI service
-                                                            </a>—and his life
-                                                            </li>
-                                                            <li>
-                                                                Explaining a
-                                                                <a href="https://codelabs.developers.google.com/codelabs/fraud-detection-ai-explanations/" target="_blank" rel="noopener noreferrer">
-                                                                    fraud detection model</a> with Cloud AI Platform
-                                                            </li>
-                                                            <li>
-                                                                <a href="https://sararobinson.dev/2020/01/15/fraud-detection-tensorflow.html" target="_blank" rel="noopener noreferrer">
-                                                                    Fraud detection </a
-                                  > with TensorFlow and Explainable AI
+                    <hr />
+                    <table class="topics" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <center>
+                            <div class="news">
+                              <h3 class="news-title">Useful Links:</h3>
+                              <ul class="news-list">
+                                <li>
+                                  <a
+                                    href="https://medium.com/google-cloud/13-most-common-google-cloud-reference-architectures-23630b46326d"
+                                    target="_blank"
+                                  >
+                                    13 Most Common Google Cloud Reference
+                                    Architectures
+                                  </a>
                                 </li>
                                 <li>
-                                    Not just for HTTP anymore: 
+                                  <a
+                                    href="https://googleapis.dev/python/speech/latest/index.html"
+                                    target="_blank"
+                                  >
+                                    The Cloud Speech API
+                                  </a>
+                                  enables developers to convert audio to text.
+                                </li>
+                                <li>
+                                  How to
+                                  <a
+                                    href="https://cloud.google.com/blog/products/ai-machine-learning/how-to-quickly-solve-machine-learning-forecasting-problems-using-pandas-and-bigquery"
+                                    target="_blank"
+                                  >
+                                    quickly solve machine learning forecasting
+                                    problems
+                                  </a>
+                                  using Pandas and BigQuery
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://medium.com/google-cloud/gcp-dashboard-overview-c80ffd0ed521"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    GCP Dashboard Overview
+                                  </a>
+                                </li>
+                                <li>
+                                  Say hello to the
+                                  <a
+                                    href="https://firebase.googleblog.com/2020/05/local-firebase-emulator-ui.html"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    helpful Firebase Emulator</a
+                                  >- a local first UI to boost your productivity
+                                </li>
+                                <li>
+                                  How
+                                  <a
+                                    href="https://cloud.google.com/blog/products/ai-machine-learning/using-google-cloud-platform-free-tier-to-scale-out-an-ai-service"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    Google Cloud helped scaling-out one person's
+                                    AI service </a
+                                  >—and his life
+                                </li>
+                                <li>
+                                  Explaining a
+                                  <a
+                                    href="https://codelabs.developers.google.com/codelabs/fraud-detection-ai-explanations/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    fraud detection model</a
+                                  >
+                                  with Cloud AI Platform
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://sararobinson.dev/2020/01/15/fraud-detection-tensorflow.html"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    Fraud detection
+                                  </a>
+                                  with TensorFlow and Explainable AI
+                                </li>
+                                <li>
+                                  Not just for HTTP anymore:
                                   <a
                                     href="https://cloud.google.com/blog/products/compute/serve-cloud-run-requests-with-grpc-not-just-http"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     >gRPC comes to Cloud Run</a
-                                  >  
+                                  >
                                 </li>
-                                <li>Test your 
+                                <li>
+                                  Test your
                                   <a
                                     href="https://inthecloud.withgoogle.com/bigquery-weekly/register.html"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    > data analysis skills</a
-                                  > with the pros(BigQuery Data Challenge)
+                                  >
+                                    data analysis skills</a
+                                  >
+                                  with the pros(BigQuery Data Challenge)
                                 </li>
-                                <li>3 ways  
+                                <li>
+                                  3 ways
                                   <a
                                     href="https://developers.googleblog.com/2020/05/3-ways-local-developer-communities-are-staying-connected-virtually.html"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    >local developer communities</a> are staying connected virtually
-                                                            </li>
-                                                            <li>
-                                                                <a href="https://codelabs.developers.google.com/codelabs/tfjs-training-classfication/index.html#0" target="_blank" rel="noopener noreferrer">
-                                                                    TensorFlow.js
-
-                                                                </a> — Handwritten digit recognition with CNNs:
-                                                            </li>
-                                                            <li>
-                                                                Build a
-                                                                <a href="https://codelabs.developers.google.com/codelabs/pay-android-checkout/index.html" target="_blank" rel="noopener noreferrer">
-                                                                    Fast Checkout Experience </a
-                                   > on Android with Google Pay (Kotlin)
-                                 </li>
-                                 <li> Adding 
-                                    <a href="https://codelabs.developers.google.com/codelabs/google-maps-in-flutter/index.html" target="_blank" rel="noopener noreferrer">
-                                        Google Maps to a Flutter app
-
+                                    >local developer communities</a
+                                  >
+                                  are staying connected virtually
+                                </li>
+                                
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <center>
+                            <div class="news">
+                              <h3 class="news-title">Codelabs:</h3>
+                              <ul class="news-list">
+                                <li>
+                                    <a
+                                      href="https://codelabs.developers.google.com/codelabs/tfjs-training-classfication/index.html#0"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      TensorFlow.js
                                     </a>
-                                                            </li>
-                                                            <li>Create a simple store locator with
-                                                                <a href="https://codelabs.developers.google.com/codelabs/google-maps-simple-store-locator/index.html#0" target="_blank" rel="noopener noreferrer">
-                                                                    Google Maps Platform
-
+                                    — Handwritten digit recognition with CNNs:
+                                  </li>
+                                  <li>
+                                    Build a
+                                    <a
+                                      href="https://codelabs.developers.google.com/codelabs/pay-android-checkout/index.html"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      Fast Checkout Experience
                                     </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <center>
-                                                    <div class="news">
-                                                        <h3 class="news-title">Upcoming Events:</h3>
-                                                        <ul class="news-list">
-                                                            <li>
-                                                                <a href="https://cloud.google.com/blog/topics/google-cloud-next/announcing-google-cloud-next20-onair" target="_blank" rel="noopener noreferrer">Cloud Next OnAir</a
+                                    on Android with Google Pay (Kotlin)
+                                  </li>
+                                  <li>
+                                    Adding
+                                    <a
+                                      href="https://codelabs.developers.google.com/codelabs/google-maps-in-flutter/index.html"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      Google Maps to a Flutter app
+                                    </a>
+                                  </li>
+                                  <li>
+                                    Create a simple store locator with
+                                    <a
+                                      href="https://codelabs.developers.google.com/codelabs/google-maps-simple-store-locator/index.html#0"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      Google Maps Platform
+                                    </a>
+                                  </li>
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <center>
+                            <div class="news">
+                              <h3 class="news-title">Upcoming Events:</h3>
+                              <ul class="news-list">
+                                <li>
+                                  <a
+                                    href="https://cloud.google.com/blog/topics/google-cloud-next/announcing-google-cloud-next20-onair"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Cloud Next OnAir</a
                                   >
                                 </li>
                                 <li>
@@ -400,8 +553,8 @@
                                     href="https://developer.android.com/android11"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    >Android11: The Beta Launch Show </a
-                                  >
+                                    >Android11: The Beta Launch Show
+                                  </a>
                                 </li>
                                 <li>
                                   <a
@@ -409,10 +562,8 @@
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >
-                                   
-Web.dev Live
-</a
-                                  >
+                                    Web.dev Live
+                                  </a>
                                 </li>
                                 <li>
                                   <a
@@ -422,83 +573,11 @@ Web.dev Live
                                     >Firebase Live 2020</a
                                   >
                                 </li>
-            
                               </ul>
                             </div>
                           </center>
                         </td>
                       </tr>
-                     <!-- <tr>
-                        <td>
-                          <center>
-                            <div class="news">
-                              <h3 class="news-title">From the community:</h3>
-                              <ul class="news-list">
-                                <li>
-                                  <b>Project:</b> Shashank Sharma   
-                                  <a
-                                    href="http://shashank-py.blogspot.com/2017/04/indias-mp-transportation-analysis.html"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >(MP transportation Analysis with Python)</a
-                                    > - <a
-                                    href="https://github.com/shashank-sharma/MP-Transportation-Analysis"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Github</a
-                                  >
-                                </li>
-                                <li>
-                                    <b>Certification:</b> Shashank Sharma   
-                                    <a
-                                      href="https://courses.edx.org/certificates/20f7d3683b944982963de7dc0cfaaec3"
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      >(Introduction to computer science)</a
-                                      >
-                                </li>
-                                <li>
-                                    <b>Certification:</b> Anant Gupta    
-                                    <a
-                                      href="https://drive.google.com/file/d/15VEzh8t6UT_iXiCux5vF4AbnwwTmpKW2/view"
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      >(AWS Solution Architect Certified)</a
-                                      >
-                                </li>
-                                <li>
-                                    <b>Project:</b> Aditya Sharma     
-                                    <a
-                                      href="https://github.com/adityaas26/Dr-Posture"
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      >(Dr. Posture)</a
-                                      >
-                                </li>
-                                <li>
-                                    <b>Project:</b> Yashraj Nigam      
-                                    <a
-                                      href="https://github.com/yrnigam/Crop_Sowing_Prediction"
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      >(Crop Sowing Prediction)</a
-                                      >
-                                </li>
-                                <li>
-                                    <b>Certification:</b> Rajat Gupta      
-                                    <a
-                                      href="https://www.coursera.org/account/accomplishments/certificate/4WFNFGVQSUV4"
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      >(Data Science)</a
-                                      >
-                                </li>
-                                
-                              </ul>
-                            </div>
-                          </center>
-                        </td>
-                      </tr>-->
                     </table>
 
                     <hr />
@@ -507,7 +586,11 @@ Web.dev Live
                         <td>
                           <center>
                             <p
-                              style="display:inline-block; float: left;text-align: justify"
+                              style="
+                                display: inline-block;
+                                float: left;
+                                text-align: justify;
+                              "
                               id="social"
                             >
                               Rate this newsletter:
@@ -518,37 +601,43 @@ Web.dev Live
                             >
                               <ul
                                 id="ratestar"
-                                style="list-style: none; float:left; display:inline-block; width:25%; text-align: center"
+                                style="
+                                  list-style: none;
+                                  float: left;
+                                  display: inline-block;
+                                  width: 25%;
+                                  text-align: center;
+                                "
                               >
-                                <li style="display:inline; ">
+                                <li style="display: inline;">
                                   <img
                                     src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
                                     alt=""
                                     width="4%"
                                   />
                                 </li>
-                                <li style="display:inline; ">
+                                <li style="display: inline;">
                                   <img
                                     src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
                                     alt=""
                                     width="4%"
                                   />
                                 </li>
-                                <li style="display:inline; ">
+                                <li style="display: inline;">
                                   <img
                                     src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
                                     alt=""
                                     width="4%"
                                   />
                                 </li>
-                                <li style="display:inline; ">
+                                <li style="display: inline;">
                                   <img
                                     src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
                                     alt=""
                                     width="4%"
                                   />
                                 </li>
-                                <li style="display:inline; ">
+                                <li style="display: inline;">
                                   <img
                                     src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/d39e15f0-92ec-4c2b-aafa-1569b844f855.png"
                                     alt=""
@@ -557,48 +646,106 @@ Web.dev Live
                                 </li>
                               </ul>
                             </a>
-                                                                <div style="text-align: center;display: inline-block; float: right; width: 40%" id="social-icons">
-                                                                    <ul id="icons-list" style="list-style:none; ">
-                                                                        <li style="display: inline; padding: 0 5px;">
-                                                                            <a href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/" target="_blank" rel="noopener noreferrer"><img src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png" alt="Meetup" width="6%" /></a>
-                                                                        </li>
-                                                                        <li style="display: inline; padding: 0 5px;">
-                                                                            <a href="https://gcdcindore.dev" target="_blank" rel="noopener noreferrer"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/dark-link-48.png" alt="GcdcIndore" width="6%" /></a>
-                                                                        </li>
-                                                                        <li style="display: inline; padding: 0 5px;">
-                                                                            <a href="https://www.facebook.com/gdgcindore/" target="_blank" rel="noopener noreferrer"><img src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png" alt="Facebook" width="6%" /></a>
-                                                                        </li>
-                                                                        <li style="display: inline; padding: 0 5px;">
-                                                                            <a href="https://twitter.com/gdgcloudindore" target="_blank" rel="noopener noreferrer"><img src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png" alt="Twitter" width="6%" /></a>
-                                                                        </li>
-                                                                        <li style="display: inline; padding: 0 5px;">
-                                                                            <a href="https://www.instagram.com/gdgcloudindore/" target="_blank" rel="noopener noreferrer"><img src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png" alt="Instagram" width="6%" /></a>
-                                                                        </li>
-                                                                        <li style="display: inline; padding: 0 5px;">
-                                                                            <a href="https://www.linkedin.com/in/gdgcloudindore" target="_blank" rel="noopener noreferrer"><img src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png" alt="Linkedin" width="6%" /></a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img id="footer-logo" src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/96e1e7e0-0754-4baa-9ea4-b0e48dd07c20.png" alt="GCDC Logo" width="100%" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p style="display:inline-block" id="gcdclink">
-                                                    You are recieving this mail because you are a member of
-                                                    <a href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/" target="_blank">GDG Cloud Indore</a
+                            <div
+                              style="
+                                text-align: center;
+                                display: inline-block;
+                                float: right;
+                                width: 40%;
+                              "
+                              id="social-icons"
+                            >
+                              <ul id="icons-list" style="list-style: none;">
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/a685aa5c-7ab5-4c77-b20e-dc7ff66dc464.png"
+                                      alt="Meetup"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.facebook.com/gdgcloudindore"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/5d598183-0ebe-437a-a45c-b2f68c1d905f.png"
+                                      alt="Facebook"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://twitter.com/gdgcloudindore"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/20b26c35-b020-4ea2-a756-995d9a188cd2.png"
+                                      alt="Twitter"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.instagram.com/gdgcloudindore/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/4a070e19-87ab-4543-9c5c-3180f5ffe1ca.png"
+                                      alt="Instagram"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                                <li style="display: inline; padding: 0 5px;">
+                                  <a
+                                    href="https://www.linkedin.com/company/gdgcloudindore/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                      src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/0f0d2abc-0492-4c5c-9998-4b83ea8fc8fd.png"
+                                      alt="Linkedin"
+                                      width="6%"
+                                  /></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </center>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            id="footer-logo"
+                            src="https://gallery.mailchimp.com/303ef851a601f593c6d6c14b6/images/96e1e7e0-0754-4baa-9ea4-b0e48dd07c20.png"
+                            alt="GCDC Logo"
+                            width="100%"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="display: inline-block;" id="gcdclink">
+                            You are recieving this mail because you are a member
+                            of
+                            <a
+                              href="https://www.meetup.com/Google-Cloud-Developer-Community-Indore/"
+                              target="_blank"
+                              >GDG Cloud Indore</a
                             >
                           </p>
                           <p
-                            style="display:inline-block; text-align: right; float:right"
+                            style="
+                              display: inline-block;
+                              text-align: right;
+                              float: right;
+                            "
                             id="policy"
                           >
-                            <a style="color:gray" href="#" target="_blank"
+                            <a style="color: gray;" href="#" target="_blank"
                               >Privacy Policy</a
                             >
                           </p>
